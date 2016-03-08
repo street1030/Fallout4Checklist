@@ -16,7 +16,6 @@
 [Rr]elease/
 [Rr]eleases/
 x64/
-x86/
 build/
 bld/
 [Bb]in/
@@ -75,7 +74,6 @@ ipch/
 *.aps
 *.ncb
 *.opensdf
-*.sdf
 *.cachefile
 
 # Visual Studio profiler
