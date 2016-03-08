@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.QuestStageDetailsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             xmlns:cal="http://www.caliburnproject.org"
+             xmlns:c="clr-namespace:Fallout4Checklist.Controls"
+             xmlns:b="clr-namespace:Fallout4Checklist.Models"
+             mc:Ignorable="d">
+    <Border Padding="5, 5, 5, 5">
+        <StackPanel>
+            <TextBlock Text="{Binding Description}" Style="{StaticResource WhiteBoldText14}" />
+            <StackPanel>
+                <Border CornerRadius="5" 
+                        Padding="5, 0, 5, 5"
+                        Margin="0, 5, 0, 0"
+                        Visibility="{Binding HasOtherRewards, Converter={StaticResource boolToVisibilityConverter}}"
+                        Background="{StaticResource LightGray}">
+                    <ItemsControl ItemsSource="{Binding QuestRewards}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <ContentControl Margin="0, 5, 0, 0" cal:View.Model="{Binding}" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+
+                <ItemsControl ItemsSource="{Binding WeaponRewards}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <ContentControl Margin="0, 5, 0, 0" cal:View.Model="{Binding}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding ArmorRewards}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <ContentControl Margin="0, 5, 0, 0" cal:View.Model="{Binding}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

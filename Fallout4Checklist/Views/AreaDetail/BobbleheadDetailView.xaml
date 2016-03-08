@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.BobbleheadDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:cal="http://www.caliburnproject.org"
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             xmlns:ctrl="clr-namespace:Fallout4Checklist.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <DockPanel>
+            <ctrl:HoverCheckBox Style="{StaticResource ExpandableSquareCheckButton}" />
+            
+            <Border Style="{StaticResource CheckableItemHeaderContent}">
+                <TextBlock Style="{StaticResource WhiteBoldVerticallyCenteredText14}" Text="{Binding Bobblehead.Name}" />
+            </Border>
+        </DockPanel>
+        <StackPanel Style="{StaticResource ItemDescriptionContainer}">
+            <Border Style="{StaticResource ImageBorder}">
+                <Image Style="{StaticResource SmallMaxHeightImage}" Source="{Binding Bobblehead.ImagePath.FullPath}" />
+            </Border>
+            <Border Style="{StaticResource ItemDescriptionBorder}">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource WhiteThinJustifiedText14}" Text="{Binding Bobblehead.Description}" />
+                    
+                    <CheckBox Style="{StaticResource ExpandableLocationCheckBox}"
+                              Content="{Binding Walkthrough}"
+                              Visibility="{Binding Bobblehead.Walkthrough, Converter={StaticResource stringToVisibilityConverter}}"
+                              Margin="0, 5, 0, 0" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

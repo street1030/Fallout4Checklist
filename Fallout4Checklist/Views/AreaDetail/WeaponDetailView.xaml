@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.WeaponDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" 
+             xmlns:ctrl="clr-namespace:Fallout4Checklist.Controls"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <DockPanel>
+            <ctrl:HoverCheckBox Style="{StaticResource ExpandableSquareCheckButton}" />
+
+            <Button Style="{StaticResource ItemTooltipButton}" />
+
+            <Border Style="{StaticResource CheckableItemHeaderContent}">
+                <TextBlock Style="{StaticResource WhiteBoldText14}" Text="{Binding Weapon.Name}" />
+            </Border>
+        </DockPanel>
+        <StackPanel Style="{StaticResource ItemDescriptionContainer}">
+            <Border Style="{StaticResource ImageBorder}">
+                <Image Style="{StaticResource SmallMaxHeightImage}" Source="{Binding Weapon.ImagePath.FullPath}" />
+            </Border>
+            <Border Style="{StaticResource ItemDescriptionBorder}">
+                <StackPanel>
+                    <ContentControl x:Name="WeaponStats">
+                        <ContentControl.Style>
+                            <Style TargetType="ContentControl">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding HasQuest}" Value="True">
+                                        <Setter Property="Margin" Value="0, 0, 0, 5" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding HasQuest}" Value="False">
+                                        <Setter Property="Margin" Value="0" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ContentControl.Style>
+                    </ContentControl>
+                    <ContentControl x:Name="Quest" Margin="0, 0, 0, 5" 
+                                    Visibility="{Binding HasQuest, Converter={StaticResource boolToVisibilityConverter}}" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

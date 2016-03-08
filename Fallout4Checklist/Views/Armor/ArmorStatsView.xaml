@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.ArmorStatsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             mc:Ignorable="d" 
+             FontSize="10"
+             Foreground="{StaticResource DarkGray}"
+             d:DesignHeight="150" d:DesignWidth="300">
+    <Border CornerRadius="5" Background="{StaticResource LightGray}" Padding="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="{Binding Armor.Name}" Style="{StaticResource BoldText}" />
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource Text}" Text="{Binding Armor.DamageResist}" Margin="0, 0, 5, 0" />
+                    <TextBlock Style="{StaticResource Text}" Text="Damage Resist" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource Text}" Text="{Binding Armor.EnergyResist}" Margin="0, 0, 5, 0" />
+                    <TextBlock Style="{StaticResource Text}" Text="Energy Resist" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource Text}" Text="{Binding Armor.RadiationResist}" Margin="0, 0, 5, 0" />
+                    <TextBlock Style="{StaticResource Text}" Text="Radiation Resist" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource Text}" Text="{Binding Armor.Value}" Margin="0, 0, 5, 0" />
+                    <TextBlock Style="{StaticResource Text}" Text="Value" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource Text}" Text="{Binding Armor.Weight}" Margin="0, 0, 5, 0" />
+                    <TextBlock Style="{StaticResource Text}" Text="Weight" />
+                </StackPanel>
+                
+                <StackPanel>
+                    <ItemsControl ItemsSource="{Binding Effects}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Style="{StaticResource Text}" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </StackPanel>
+
+            <Border Background="{StaticResource DarkGray}"
+                    Margin="5, 0, 0, 0"
+                    Height="120"
+                    Width="80"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    CornerRadius="5"
+                    Padding="5">
+                <ContentControl x:Name="ArmorSlots" />
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

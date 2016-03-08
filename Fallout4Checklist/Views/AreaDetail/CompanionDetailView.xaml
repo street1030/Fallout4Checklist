@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.CompanionDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             xmlns:ctrl="clr-namespace:Fallout4Checklist.Controls"
+             xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <DockPanel>
+            <ctrl:HoverCheckBox Style="{StaticResource ExpandableSquareCheckButton}" />
+            
+            <Border Style="{StaticResource CheckableItemHeaderContent}">
+                <TextBlock Style="{StaticResource WhiteBoldVerticallyCenteredText14}" Text="{Binding Companion.Name}" />
+            </Border>
+        </DockPanel>
+        <StackPanel Style="{StaticResource ItemDescriptionContainer}">
+            <Border Style="{StaticResource ImageBorder}">
+                <Image Style="{StaticResource SmallMaxHeightImage}" Source="{Binding Companion.ImagePath.FullPath}" />
+            </Border>
+            <Border Style="{StaticResource ItemDescriptionBorder}">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource WhiteBoldText14}" Text="{Binding Companion.Perk}" />
+
+                    <StackPanel Visibility="{Binding HasPerkDescription, Converter={StaticResource boolToVisibilityConverter}}">
+                        <TextBlock Style="{StaticResource WhiteThinText14}" Text="{Binding Companion.PerkDescription}" />
+                        <TextBlock Style="{StaticResource WhiteBoldTextWithTopMargin}" Text="Perk Requirements" />
+                        <TextBlock Style="{StaticResource WhiteThinText14}" Text="{Binding Companion.PerkRequirement}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

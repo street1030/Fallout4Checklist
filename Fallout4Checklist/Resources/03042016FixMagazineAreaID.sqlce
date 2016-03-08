@@ -1,0 +1,3 @@
+UPDATE Magazine
+SET AreaID = 46
+WHERE Name = '#05 Demon Slaves, Demon Sands'

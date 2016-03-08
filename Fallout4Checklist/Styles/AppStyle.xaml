@@ -1,0 +1,898 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:c="clr-namespace:Fallout4Checklist.Converters"
+                    xmlns:ctrl="clr-namespace:Fallout4Checklist.Controls"
+                    xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                    xmlns:cal="http://www.caliburnproject.org">
+    <c:StringToVisibilityConverter x:Key="stringToVisibilityConverter" />
+    <c:BoolToVisibilityConverter x:Key="boolToVisibilityConverter" />
+    <c:ObjectToVisibilityConverter x:Key="objectToVisibilityConverter" />
+    <c:CollectedStatusToColorConverter x:Key="pathColorConverter" />
+    <c:CollectedStatusToStrokeConverter x:Key="pathStrokeConverter" />
+
+    <SolidColorBrush x:Key="Gray">#808080</SolidColorBrush>
+    <SolidColorBrush x:Key="GrayMouseOver">#979797</SolidColorBrush>
+
+    <SolidColorBrush x:Key="LightGray">#CCCCCC</SolidColorBrush>
+    <SolidColorBrush x:Key="LightGrayMouseOver">#e6e6e6</SolidColorBrush>
+
+    <SolidColorBrush x:Key="DarkGray">#4D4D4D</SolidColorBrush>
+    <SolidColorBrush x:Key="DarkGrayMouseOver">#666666</SolidColorBrush>
+
+    <SolidColorBrush x:Key="OverlayStroke">#DB4105</SolidColorBrush>
+    <SolidColorBrush x:Key="OverlayStrokeHover">#ff7f4d</SolidColorBrush>
+    <SolidColorBrush x:Key="CollectedColor">#5cb85c</SolidColorBrush>
+    <SolidColorBrush x:Key="CollectedColorMouseOver">#46a046</SolidColorBrush>
+    <SolidColorBrush x:Key="ErrorColor">#d9534f</SolidColorBrush>
+    <SolidColorBrush x:Key="ErrorColorMouseOver">#D43F3A</SolidColorBrush>
+    <SolidColorBrush x:Key="ActiveItemBackground">#e6e6e6</SolidColorBrush>
+
+    <Color x:Key="OverlayFill">#DB4105</Color>
+    <Color x:Key="OverlayFillHover">#ff7f4d</Color>
+
+    <BitmapImage x:Key="BottlecapImage" UriSource="pack://siteoforigin:,,,/Images/BottleCap.png" />
+    <BitmapImage x:Key="Unchecked" UriSource="pack://siteoforigin:,,,/Images/Unchecked.png" />
+    <BitmapImage x:Key="UncheckedHover" UriSource="pack://siteoforigin:,,,/Images/UncheckedHover.png" />
+    <BitmapImage x:Key="Checked" UriSource="pack://siteoforigin:,,,/Images/Checked.png" />
+    <BitmapImage x:Key="CheckedHover" UriSource="pack://siteoforigin:,,,/Images/CheckedHover.png" />
+    <BitmapImage x:Key="Outline" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Outline.png" />
+    <BitmapImage x:Key="Hat" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Hat.png" />
+    <BitmapImage x:Key="Eye" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Eye.png" />
+    <BitmapImage x:Key="Mouth" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Mouth.png" />
+    <BitmapImage x:Key="Chest" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Chest.png" />
+    <BitmapImage x:Key="Body" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/Body.png" />
+    <BitmapImage x:Key="LeftArm" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/LeftArm.png" />
+    <BitmapImage x:Key="RightArm" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/RightArm.png" />
+    <BitmapImage x:Key="LeftLeg" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/LeftLeg.png" />
+    <BitmapImage x:Key="RightLeg" UriSource="pack://siteoforigin:,,,/Images/BodyOutline/RightLeg.png" />
+    <BitmapImage x:Key="DamageResist" UriSource="pack://siteoforigin:,,,/Images/Damage.png" />
+    <BitmapImage x:Key="EnergyResist" UriSource="pack://siteoforigin:,,,/Images/Energy.png" />
+    <BitmapImage x:Key="RadiationResist" UriSource="pack://siteoforigin:,,,/Images/Radiation.png" />
+    <BitmapImage x:Key="Weight" UriSource="pack://siteoforigin:,,,/Images/Weight.png" />
+
+    <Style x:Key="CheckableItemHeaderContent" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="cal:Message.Attach" Value="[Event PreviewMouseDown] = [Action HeaderClicked()]" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsExpanded, FallbackValue=True}" Value="True">
+                <Setter Property="CornerRadius" Value="0, 5, 0, 0" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                <Setter Property="CornerRadius" Value="0, 5, 5, 0" />
+                <Setter Property="Margin" Value="0, 0, 0, 5" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsChecked, FallbackValue=True}" Value="True">
+                <Setter Property="Background" Value="{StaticResource CollectedColor}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsChecked}" Value="False">
+                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+            </DataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsChecked}" Value="True" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Background" Value="{StaticResource CollectedColorMouseOver}" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsChecked}" Value="False" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Background" Value="{StaticResource DarkGrayMouseOver}" />
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CollapsableHeader" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="cal:Message.Attach" Value="[Event PreviewMouseDown] = [Action HeaderClicked()]" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="True">
+                <Setter Property="CornerRadius" Value="5, 5, 0, 0" />
+                <Setter Property="Margin" Value="5, 0, 5, 0" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                <Setter Property="CornerRadius" Value="5, 5, 5, 5" />
+                <Setter Property="Margin" Value="5, 0, 5, 5" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True">
+                <Setter Property="Background" Value="{StaticResource DarkGrayMouseOver}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="False">
+                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CheckBoxImage" TargetType="Image">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Completed}" Value="True">
+                <Setter Property="Source" Value="{StaticResource Checked}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Completed}" Value="False">
+                <Setter Property="Source" Value="{StaticResource Unchecked}" />
+            </DataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Completed}" Value="False" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Source" Value="{StaticResource UncheckedHover}" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Completed}" Value="True" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Source" Value="{StaticResource CheckedHover}" />
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ItemHeaderBorder" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="cal:Message.Attach" Value="[Event PreviewMouseDown] = [Action HeaderClicked()]" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="True">
+                <Setter Property="CornerRadius" Value="5, 5, 0, 0" />
+                <Setter Property="Margin" Value="5, 0, 5, 0" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                <Setter Property="CornerRadius" Value="5, 5, 5, 5" />
+                <Setter Property="Margin" Value="5, 0, 5, 5" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsChecked}" Value="True">
+                <Setter Property="Background" Value="{StaticResource CollectedColor}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsChecked}" Value="False">
+                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+            </DataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsChecked}" Value="True" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Background" Value="{StaticResource CollectedColorMouseOver}" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsChecked}" Value="False" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Background" Value="{StaticResource DarkGrayMouseOver}" />
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ItemDescriptionContainer" TargetType="StackPanel">
+        <Setter Property="Visibility" Value="{Binding IsExpanded, Converter={StaticResource boolToVisibilityConverter}}" />
+    </Style>
+
+    <Style x:Key="ImageBorder" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Background" Value="White" />
+    </Style>
+
+    <Style x:Key="ItemDescriptionBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="0, 0, 5, 5" />
+        <Setter Property="Margin" Value="0, 0, 0, 5" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Background" Value="{StaticResource DarkGray}" />
+    </Style>
+
+    <Style x:Key="SmallMaxHeightImage" TargetType="Image">
+        <Setter Property="MaxHeight" Value="120" />
+    </Style>
+
+    <!-- TEXT START -->
+    <Style x:Key="Text" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style x:Key="ThinText" TargetType="TextBlock" BasedOn="{StaticResource Text}">
+        <Setter Property="FontWeight" Value="Thin" />
+    </Style>
+
+    <Style x:Key="BoldText" TargetType="TextBlock" BasedOn="{StaticResource Text}">
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="ItalicText" TargetType="TextBlock" BasedOn="{StaticResource Text}">
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="ThinJustifiedText" TargetType="TextBlock" BasedOn="{StaticResource ThinText}">
+        <Setter Property="TextAlignment" Value="Justify" />
+    </Style>
+
+    <Style x:Key="WhiteText" TargetType="TextBlock" BasedOn="{StaticResource Text}">
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style x:Key="WhiteBoldText" TargetType="TextBlock" BasedOn="{StaticResource WhiteText}">
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="WhiteItalicText" TargetType="TextBlock" BasedOn="{StaticResource WhiteText}">
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="WhiteThinText" TargetType="TextBlock" BasedOn="{StaticResource WhiteText}">
+        <Setter Property="FontWeight" Value="Thin" />
+    </Style>
+
+    <Style x:Key="WhiteThinJustifiedText" TargetType="TextBlock" BasedOn="{StaticResource WhiteThinText}">
+        <Setter Property="TextAlignment" Value="Justify" />
+    </Style>
+
+    <Style x:Key="BoldTextWithTopMargin" TargetType="TextBlock" BasedOn="{StaticResource BoldText}">
+        <Setter Property="Margin" Value="0, 10, 0, 0" />
+    </Style>
+
+    <Style x:Key="WhiteBoldTextWithTopMargin" TargetType="TextBlock" BasedOn="{StaticResource WhiteBoldText}">
+        <Setter Property="Margin" Value="0, 10, 0, 0" />
+    </Style>
+
+    <Style x:Key="BoldVerticallyCenteredText" TargetType="TextBlock" BasedOn="{StaticResource BoldText}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="WhiteBoldVerticallyCenteredText" TargetType="TextBlock" BasedOn="{StaticResource WhiteBoldText}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+    <!-- TEXT END -->
+
+    <!-- TEXT 14 START -->
+    <Style x:Key="Text14" TargetType="TextBlock" BasedOn="{StaticResource Text}">
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <Style x:Key="WhiteText14" TargetType="TextBlock" BasedOn="{StaticResource Text14}">
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style x:Key="BoldText14" TargetType="TextBlock" BasedOn="{StaticResource Text14}">
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="ItalicText14" TargetType="TextBlock" BasedOn="{StaticResource Text14}">
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="WhiteBoldText14" TargetType="TextBlock" BasedOn="{StaticResource WhiteText14}">
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="WhiteItalicText14" TargetType="TextBlock" BasedOn="{StaticResource WhiteText14}">
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="ThinText14" TargetType="TextBlock" BasedOn="{StaticResource Text14}">
+        <Setter Property="FontWeight" Value="Thin" />
+    </Style>
+
+    <Style x:Key="WhiteThinText14" TargetType="TextBlock" BasedOn="{StaticResource WhiteText14}">
+        <Setter Property="FontWeight" Value="Thin" />
+    </Style>
+
+    <Style x:Key="ThinJustifiedText14" TargetType="TextBlock" BasedOn="{StaticResource ThinText14}">
+        <Setter Property="TextAlignment" Value="Justify" />
+    </Style>
+
+    <Style x:Key="WhiteThinJustifiedText14" TargetType="TextBlock" BasedOn="{StaticResource WhiteThinText14}">
+        <Setter Property="TextAlignment" Value="Justify" />
+    </Style>
+
+    <Style x:Key="BoldTextWithTopMargin14" TargetType="TextBlock" BasedOn="{StaticResource BoldText14}">
+        <Setter Property="Margin" Value="0, 10, 0, 0" />
+    </Style>
+
+    <Style x:Key="BoldVerticallyCenteredText14" TargetType="TextBlock" BasedOn="{StaticResource BoldText14}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="WhiteBoldVerticallyCenteredText14" TargetType="TextBlock" BasedOn="{StaticResource WhiteBoldText14}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+    <!-- TEXT 14 END -->
+
+    <Style x:Key="ItemTooltipButton" TargetType="Button">
+        <Setter Property="Width" Value="35" />
+        <Setter Property="IsEnabled" Value="False" />
+        <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+        <Setter Property="Background" Value="{StaticResource DarkGray}" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <TextBlock Style="{StaticResource WhiteText14}"
+                                                   Text="{TemplateBinding Content}"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                <Setter Property="Margin" Value="0, 0, .5, 5" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsExpanded}" Value="True">
+                <Setter Property="Margin" Value="0, 0, .5, 0" />
+            </DataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsPurchased}" Value="False" />
+                    <Condition Binding="{Binding IsWornByNPC}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsPurchased}" Value="True" />
+                    <Condition Binding="{Binding IsWornByNPC}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Visible" />
+                <Setter Property="Content" Value="&#x1F4B0;" />
+                <Setter Property="ToolTip" Value="Purchased Item" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding IsPurchased}" Value="False" />
+                    <Condition Binding="{Binding IsWornByNPC}" Value="True" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Visible" />
+                <Setter Property="Content" Value="&#x1F465;" />
+                <Setter Property="ToolTip" Value="Item Worn By NPC" />
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ShowAll" TargetType="{x:Type metro:ToggleSwitch}">
+        <Setter Property="Content" Value="Show All" />
+        <Setter Property="Width" Value="135" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="IsChecked" Value="{Binding ShowAll}" />
+    </Style>
+
+    <Style x:Key="ExpandableSquareCheckButton" TargetType="ctrl:HoverCheckBox">
+        <Setter Property="Background" Value="{StaticResource DarkGray}" />
+        <Setter Property="HoverBackground" Value="{StaticResource DarkGrayMouseOver}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Gray}" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Width" Value="35" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="IsChecked" Value="{Binding IsChecked}" />
+        <Setter Property="Content" Value="&#xE001;" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ctrl:HoverCheckBox">
+                    <Border x:Name="bD" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0, 0, .5, 0"
+                            Padding="{TemplateBinding Padding}">
+                        <TextBlock TextAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Text="{TemplateBinding Content}"
+                                                   FontFamily="Segoe UI Symbol"
+                                                   FontSize="12"
+                                                   Foreground="{TemplateBinding Foreground}"
+                                                   FontWeight="Thin"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        
+                        <DataTrigger Binding="{Binding IsLastItem}" Value="True">
+                            <Setter Property="CornerRadius" TargetName="bD" Value="0, 0, 0, 5" />
+                        </DataTrigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background"
+                                    TargetName="bD"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" 
+                                    TargetName="bD"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HoverBackground}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content" Value="&#xE21C;" />
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsExpanded}" Value="True">
+                            <Setter Property="CornerRadius" TargetName="bD" Value="5, 0, 0, 0" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                            <Setter Property="CornerRadius" TargetName="bD" Value="5, 0, 0, 5" />
+                            <Setter Property="Margin" Value="0, 0, 0, 5" />
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="SquareCheckButton" TargetType="ctrl:HoverCheckBox">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="HoverBackground" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="Transparent" />
+        <Setter Property="Width" Value="35" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="IsChecked" Value="{Binding IsChecked}" />
+        <Setter Property="Content" Value="&#xE001;" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ctrl:HoverCheckBox">
+                    <Border x:Name="bD"
+                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Padding="{TemplateBinding Padding}">
+                        <TextBlock TextAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Text="{TemplateBinding Content}"
+                                                   FontFamily="Segoe UI Symbol"
+                                                   FontSize="12"
+                                                   Foreground="{TemplateBinding Foreground}"
+                                                   FontWeight="Thin"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background"
+                                    TargetName="bD"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" 
+                                    TargetName="bD"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HoverBackground}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content" Value="&#xE21C;" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ExpandCollapseToggleStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <ContentPresenter />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TreeViewItemGroup" TargetType="TreeViewItem">
+        <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource boolToVisibilityConverter}}" />
+        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=OneWay}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TreeViewItem">
+                    <StackPanel Margin="0, 0, 0, 5">
+                        <ToggleButton x:Name="Expander" 
+                                          ClickMode="Press"
+                                          Margin="0"
+                                          Padding="0"
+                                          Style="{StaticResource ExpandCollapseToggleStyle}"
+                                          IsChecked="{Binding IsExpanded}">
+                            <Border x:Name="Bd" 
+                                            CornerRadius="5, 5, 0, 0"
+                                            Padding="10" 
+                                            SnapsToDevicePixels="true">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Background" Value="{StaticResource DarkGrayMouseOver}" />
+                                            </Trigger>
+                                            <Trigger Property="IsMouseOver" Value="false">
+                                                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <ContentPresenter x:Name="PART_Header" 
+                                                  ContentSource="Header" 
+                                                  TextBlock.FontWeight="Bold"
+                                                  TextBlock.Foreground="White"
+                                                  TextBlock.FontSize="14"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </Border>
+                        </ToggleButton>
+
+                        <Separator Background="{StaticResource Gray}" 
+                                           Height="1"
+                                           Margin="0"
+                                           Visibility="{Binding IsExpanded, Converter={StaticResource boolToVisibilityConverter}}" />
+
+                        <Border CornerRadius="0, 0, 5, 5"
+                                    Padding="5, 5, 5, 0"
+                                    x:Name="ItemsHost"
+                                    Background="{StaticResource DarkGray}">
+                            <ItemsPresenter />
+                        </Border>
+                    </StackPanel>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="false">
+                            <Setter Property="CornerRadius" TargetName="Bd" Value="5" />
+                            <Setter Property="Visibility" TargetName="ItemsHost" Value="Collapsed"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="TreeViewItemSubGroup" TargetType="TreeViewItem">
+        <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource boolToVisibilityConverter}}" />
+        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=OneWay}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TreeViewItem">
+                    <StackPanel Margin="0, 0, 0, 5">
+                        <ToggleButton x:Name="Expander" 
+                                          ClickMode="Press" 
+                                          Style="{StaticResource ExpandCollapseToggleStyle}"
+                                          IsChecked="{Binding IsExpanded}">
+                            <StackPanel>
+                                <Border x:Name="Bd" Padding="5" Margin="0, 5, 0, 0" CornerRadius="5, 5, 0, 0">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="true">
+                                                    <Setter Property="Background" Value="{StaticResource LightGrayMouseOver}" />
+                                                </Trigger>
+                                                <Trigger Property="IsMouseOver" Value="false">
+                                                    <Setter Property="Background" Value="{StaticResource LightGray}" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                    <ContentPresenter x:Name="PART_Header" 
+                                                  ContentSource="Header" 
+                                                  TextBlock.FontWeight="Bold"
+                                                  TextBlock.Foreground="{StaticResource DarkGray}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                                </Border>
+                            </StackPanel>
+                        </ToggleButton>
+
+                        <Border x:Name="ItemsHost" 
+                                Background="{StaticResource LightGray}" 
+                                CornerRadius="0, 0, 5, 5" 
+                                Padding="5, 0, 5, 5">
+                            <ItemsPresenter />
+                        </Border>
+                    </StackPanel>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="false">
+                            <Setter Property="CornerRadius" TargetName="Bd" Value="5" />
+                            <Setter Property="Visibility" TargetName="ItemsHost" Value="Collapsed"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="TreeViewItemItem" TargetType="TreeViewItem">
+        <Setter Property="Visibility" Value="{Binding IsVisible, Mode=OneWay, Converter={StaticResource boolToVisibilityConverter}}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TreeViewItem">
+                    <DockPanel LastChildFill="True" Margin="0, 2, 0, 0">
+                        <ctrl:HoverCheckBox Background="{StaticResource Gray}"
+                                            HoverBackground="{StaticResource GrayMouseOver}"
+                                            BorderBrush="{StaticResource LightGray}"
+                                            Foreground="White"
+                                            Margin="0, 0, .5, 0"
+                                            Style="{StaticResource SquareCheckButton}" />
+                        <Border cal:Message.Attach="[Event PreviewMouseDown] = [Action ContentClicked()]"
+                                Padding="5">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource GrayMouseOver}" />
+                                        </Trigger>
+                                        <Trigger Property="IsMouseOver" Value="False">
+                                            <Setter Property="Background" Value="{StaticResource Gray}" />
+                                        </Trigger>
+                                        <DataTrigger Binding="{Binding IsChecked}" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource CollectedColor}" />
+                                        </DataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsChecked}" Value="True" />
+                                                <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" Value="{StaticResource CollectedColorMouseOver}" />
+                                        </MultiDataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+
+                            <StackPanel>
+                                <TextBlock Style="{StaticResource WhiteBoldText}" Text="{Binding Entity.Name}" />
+
+                                <TextBlock Style="{StaticResource WhiteItalicText}"
+                                                   Visibility="{Binding Entity.Location, Converter={StaticResource stringToVisibilityConverter}}"
+                                                   Text="{Binding Entity.Location}" />
+                            </StackPanel>
+                        </Border>
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ExpandableLocationCheckBox" TargetType="CheckBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel>
+                        <Border x:Name="head" 
+                                            Padding="5">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource LightGrayMouseOver}" />
+                                        </Trigger>
+                                        <Trigger Property="IsMouseOver" Value="False">
+                                            <Setter Property="Background" Value="{StaticResource LightGray}" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <TextBlock Foreground="{StaticResource DarkGray}" 
+                                                   FontFamily="Segoe UI Symbol"
+                                                   FontWeight="Bold"
+                                                   Text="Location" />
+                        </Border>
+                        <Border x:Name="body" 
+                                            Padding="5"
+                                            CornerRadius="0, 0, 5, 5" 
+                                            BorderBrush="{StaticResource LightGray}" 
+                                            BorderThickness="2">
+                            <TextBlock Foreground="White" 
+                                                   FontWeight="Thin"
+                                                   TextWrapping="Wrap"
+                                                   Text="{TemplateBinding Content}" />
+                        </Border>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="CornerRadius" TargetName="head" Value="5" />
+                            <Setter Property="Visibility" TargetName="body" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="CornerRadius" TargetName="head" Value="5, 5, 0, 0" />
+                            <Setter Property="Visibility" TargetName="body" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="TreeViewItemQuestGroup" TargetType="TreeViewItem">
+        <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource boolToVisibilityConverter}}" />
+        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=OneWay}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TreeViewItem">
+                    <StackPanel Margin="0, 0, 0, 5">
+                        <ToggleButton x:Name="Expander" 
+                                          ClickMode="Press"
+                                          Style="{StaticResource ExpandCollapseToggleStyle}"
+                                          IsChecked="{Binding IsExpanded}">
+                            <Border x:Name="Bd" 
+                                            CornerRadius="5, 5, 0, 0"
+                                            Padding="10">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Background" Value="{StaticResource DarkGrayMouseOver}" />
+                                            </Trigger>
+                                            <Trigger Property="IsMouseOver" Value="false">
+                                                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Style="{StaticResource WhiteBoldText14}" 
+                                               Text="{Binding Header}" 
+                                               Margin="0, 0, 5, 0" />
+                                    <TextBlock Grid.Column="1" Style="{StaticResource WhiteThinText}"
+                                               HorizontalAlignment="Right" 
+                                               Text="{Binding QuestCompletion}" />
+                                </Grid>
+                            </Border>
+                        </ToggleButton>
+
+                        <Border x:Name="ItemsHost" 
+                                Background="{StaticResource DarkGray}" 
+                                CornerRadius="0, 0, 5, 5" 
+                                Padding="5, 0, 5, 5">
+                            <ItemsPresenter />
+                        </Border>
+                    </StackPanel>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="false">
+                            <Setter Property="CornerRadius" TargetName="Bd" Value="5" />
+                            <Setter Property="Visibility" TargetName="ItemsHost" Value="Collapsed"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="TreeViewItemQuest" TargetType="TreeViewItem">
+        <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource boolToVisibilityConverter}}" />
+        <Setter Property="IsExpanded" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TreeViewItem">
+                    <DockPanel LastChildFill="True" Margin="0, 2, 0, 0">
+                        <ctrl:HoverCheckBox Background="{StaticResource LightGray}"
+                                            HoverBackground="{StaticResource LightGrayMouseOver}"
+                                            Foreground="{StaticResource DarkGray}"
+                                            Margin="0, 0, 1, 0"
+                                            Style="{StaticResource SquareCheckButton}" />
+                        
+                        <Border Padding="5, 5, 5, 0"
+                                cal:Message.Attach="[Event PreviewMouseDown] = [Action QuestClicked()]">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Quest.IsChecked}" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource CollectedColor}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Quest.IsChecked}" Value="False">
+                                            <Setter Property="Background" Value="{StaticResource LightGray}" />
+                                        </DataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Quest.IsChecked}" Value="False" />
+                                                <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" Value="{StaticResource LightGrayMouseOver}" />
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Quest.IsChecked}" Value="True" />
+                                                <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" Value="{StaticResource CollectedColorMouseOver}" />
+                                        </MultiDataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel>
+                                <DockPanel Margin="0, 0, 0, 5">
+                                    <TextBlock Foreground="{StaticResource DarkGray}" FontWeight="Bold" Text="{Binding Quest.Name}" />
+                                    <TextBlock Foreground="{StaticResource DarkGray}" FontWeight="Bold" Text="{Binding Quest.XPReward}" HorizontalAlignment="Right" />
+                                </DockPanel>
+
+                                <ItemsControl ItemsSource="{Binding Rewards}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <ContentControl Margin="0, 0, 0, 5" cal:View.Model="{Binding}" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </Border>
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <DataTemplate x:Key="QuestTemplate">
+        <TextBlock />
+    </DataTemplate>
+
+    <HierarchicalDataTemplate x:Key="QuestGroupTemplate"
+                                  ItemsSource="{Binding Quests}"
+                                  ItemTemplate="{StaticResource QuestTemplate}">
+        <TextBlock />
+        <HierarchicalDataTemplate.ItemContainerStyle>
+            <Style TargetType="TreeViewItem" BasedOn="{StaticResource TreeViewItemQuest}" />
+        </HierarchicalDataTemplate.ItemContainerStyle>
+    </HierarchicalDataTemplate>
+
+    <DataTemplate x:Key="MenuItemTemplate">
+        <TextBlock />
+    </DataTemplate>
+
+    <HierarchicalDataTemplate x:Key="MenuSubGroupTemplate"
+                                  ItemsSource="{Binding MenuItems}"
+                                  ItemTemplate="{StaticResource MenuItemTemplate}">
+        <TextBlock Text="{Binding Header}" />
+        <HierarchicalDataTemplate.ItemContainerStyle>
+            <Style TargetType="TreeViewItem" BasedOn="{StaticResource TreeViewItemItem}" />
+        </HierarchicalDataTemplate.ItemContainerStyle>
+    </HierarchicalDataTemplate>
+
+    <HierarchicalDataTemplate x:Key="MenuGroupTemplate"
+                                  ItemsSource="{Binding MenuSubGroups}"
+                                  ItemTemplate="{StaticResource MenuSubGroupTemplate}">
+        <TextBlock Text="{Binding Header}" />
+        <HierarchicalDataTemplate.ItemContainerStyle>
+            <Style TargetType="TreeViewItem" BasedOn="{StaticResource TreeViewItemSubGroup}" />
+        </HierarchicalDataTemplate.ItemContainerStyle>
+    </HierarchicalDataTemplate>
+</ResourceDictionary>

@@ -1,0 +1,112 @@
+UPDATE Weapon
+SET ImagePathID = 42
+WHERE ID = 9
+GO
+UPDATE Weapon
+SET ImagePathID = 42
+WHERE ID = 10
+GO
+UPDATE Weapon
+SET ImagePathID = 42
+WHERE ID = 11
+GO
+UPDATE Weapon
+SET ImagePathID = 42
+WHERE ID = 12
+GO
+UPDATE Weapon
+SET ImagePathID = 26
+WHERE ID = 14
+GO
+UPDATE Weapon
+SET ImagePathID = 25
+WHERE ID = 16
+GO
+UPDATE Weapon
+SET ImagePathID = 25
+WHERE ID = 17
+GO
+UPDATE Weapon
+SET ImagePathID = 245
+WHERE ID = 19
+GO
+UPDATE Weapon
+SET ImagePathID = 58
+WHERE ID = 24
+GO
+UPDATE Weapon
+SET ImagePathID = 60
+WHERE ID = 25
+GO
+UPDATE Weapon
+SET ImagePathID = 82
+WHERE ID = 29
+GO
+UPDATE Weapon
+SET ImagePathID = 34
+WHERE ID = 30
+GO
+UPDATE Weapon
+SET ImagePathID = 82
+WHERE ID = 31
+GO
+UPDATE Weapon
+SET ImagePathID = 34
+WHERE ID = 48
+GO
+UPDATE Weapon
+SET ImagePathID = 68
+WHERE ID = 50
+GO
+UPDATE Weapon
+SET ImagePathID = 10
+WHERE ID = 54
+GO
+UPDATE Weapon
+SET ImagePathID = 10
+WHERE ID = 55
+GO
+UPDATE Weapon
+SET ImagePathID = 11
+WHERE ID = 57
+GO
+UPDATE Weapon
+SET ImagePathID = 67
+WHERE ID = 62
+GO
+UPDATE Weapon
+SET ImagePathID = 246
+WHERE ID = 65
+GO
+UPDATE Weapon
+SET ImagePathID = 78
+WHERE ID = 97
+GO
+UPDATE Weapon
+SET ImagePathID = 247
+WHERE ID = 104
+GO
+UPDATE Weapon
+SET ImagePathID = 249
+WHERE ID = 107
+GO
+UPDATE Weapon
+SET ImagePathID = 46
+WHERE ID = 88
+GO
+UPDATE Weapon
+SET ImagePathID = 46
+WHERE ID = 89
+GO
+UPDATE Weapon
+SET ImagePathID = 248
+WHERE ID = 113
+GO
+UPDATE Weapon
+SET ImagePathID = 13
+WHERE ID = 115
+GO
+UPDATE Weapon
+SET ImagePathID = 13
+WHERE ID = 118
+GO

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.WeaponStatsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             mc:Ignorable="d" 
+             FontSize="10"
+             Foreground="{StaticResource DarkGray}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border CornerRadius="5" Background="{StaticResource LightGray}" Padding="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Weapon.Name}" Style="{StaticResource BoldText}" />
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <TextBlock Text="{Binding Weapon.WeaponTypeID}" Style="{StaticResource HiddenIfEmptyText}"  />
+                <TextBlock Text="{Binding Weapon.Damage}" Style="{StaticResource HiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.DPS}" Style="{StaticResource HiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.DisplayRange}" Style="{StaticResource HiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.CriticalHit}" Style="{StaticResource HiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.DisplayActionPointCost}" Style="{StaticResource HiddenIfEmptyText}" />
+                <StackPanel Style="{StaticResource ValueContainer}">
+                    <Image Source="{StaticResource BottlecapImage}" Width="15" />
+                    <TextBlock Margin="5, 0, 0, 0" Text="{Binding Weapon.Value}" VerticalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <TextBlock Text="{Binding Weapon.WeaponSubTypeID}" Style="{StaticResource RightAlignHiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.AmmoCapacity}" Style="{StaticResource RightAlignHiddenIfEmptyText}" />
+                <TextBlock Text="{Binding Weapon.AttackSpeed}" Style="{StaticResource RightAlignHiddenIfEmptyText}" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

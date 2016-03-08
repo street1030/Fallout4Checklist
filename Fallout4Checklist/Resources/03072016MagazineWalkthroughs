@@ -1,0 +1,488 @@
+UPDATE Magazine
+SET Walkthrough = 'Gain access into the shelter (A nearby military trailer has a terminal that will unlock the door) and take the elevator down to the lower levels. Dodge the traps and turrets as you make your way down the hall into the residential part of the bunker. As you pass the bar area and take a short stairway down into a hall, take a hard right and go all the way to the end of the hall to find a personal bedroom with a safe and a steamer trunk. The magazine can be found to the right of the bed on a nightstand.'
+WHERE ID = 1
+GO
+UPDATE Magazine
+SET Walkthrough = 'First clear out the area of the Super Mutant menace, then enter the building and take the stairs down on the left side. In the lockup room, you can spot the magazine in a cell block just to the right. The cell is expert locked - so if you''d rather bypass it, use the Lockup Terminal on the other side of the room to get to it.'
+WHERE ID = 2
+GO
+UPDATE Magazine
+SET Walkthrough = 'Fight your way down into the quarry against all the Raiders that have taken up camp in the exterior, and look for a small side passage leading deeper into the quarry.\n\nOnce inside, follow the trail deeper and deeper into the underground area until you find a long drop down to a darkened area where a Raider leader - Bedlam, is waiting for you. Next to his location is an Armor Workbench, and the magazine will be located on top of it.'
+WHERE ID = 3
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter Hubris Comics and make your way up the stairs to the very top floor. Defeat the Ghouls (and the Glowing One lurking behind the set) and look behind the stairs up for a bathroom-turned dressing room (it has a gold star on it). Enter the room and look under the RadAway on the table to find the magazine.'
+WHERE ID = 4
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you enter the Pickman Gallery, many Raiders will already combing the place for the elusive Pickman, so pick them off while they are distracted. Head up the stairs from the entrance to the top floor, and enter the room on the right. Here you''ll find the wall on the far side has been broken open, letting you into a side passage that drops down into the sewers below. Keep following the path through the sewers and Raiders as it criss-crosses around leading to an area you can drop down into where the Raiders have cornered Pickman. You''ll find the magazine on the floor here next to the large steamer trunk (As well as Lock Picking Bobbleheadnearby!).'
+WHERE ID = 5
+GO
+UPDATE Magazine
+SET Walkthrough = 'Arrive at the wreckage of the airplane and be on the lookout for any random encounters that might spawn any assortment of enemies nearby. Head towards the middle of the wreckage and look for the main cabin that has two parts - the cargo hold and the main deck. You can reach the upper level via a small bridge along the rocks. Once on board, head to the front and look for a small bathroom with some glowing brain fungus in the room, and you''ll find the magazine in there.'
+WHERE ID = 6
+GO
+UPDATE Magazine
+SET Walkthrough = 'The outpost is fairly small, but hides a deadly secret. As you approach the radio tower, you''ll find several Raiders using the settlement as a base, including one Raider in Power Armor named Boomer, who carries a Fat Man. Carefully engage him either with stealth or make him lob his mini-nukes over your head.\n\nOnce the Raiders are gone, you can find the magazine at the main workbench, which also lets you use the place as a settlement.'
+WHERE ID = 7
+GO
+UPDATE Magazine
+SET Walkthrough = 'To get this magazine, you''ll have to delve deep into Vault 114, which is also part of the Unlikely Valentine quest. Start by entering Park Street Station and fight your way through the Triggermen to the end of the subway tunnel where the Vault Door is. Open it up with your Pip-Boy - if you haven''t already rescued Mr. Nick Valentine, you''ll need to go in the back.\n\nThe main door beyond the vault seal is locked, so head left and fight through more Triggermen to an excavated part of the Vault that has an open floor allowing you to enter Vault 114 proper. Once inside, make for the Atrium to find Nick Valentine locked in the Overseer''s office. You won''t be able to progress further into the vault without him - so either kill Dino the triggerman, or hack the terminal to get Valentine out, and follow him. As he unlocks an inaccessible door, he''ll head up another flight of stairs into a hallway that''s been barricaded up. Check the container with the lit candles in front of the barricade to find the magazine on top.'
+WHERE ID = 8
+GO
+UPDATE Magazine
+SET Walkthrough = 'Obtaining this magazine will require a bit of questing, as you must gain the trust of the Railroad faction. Begin by entering the Old North Church and exploring the basement crypts until you find a Boston Freedom Rail symbol. You must spell out the password'
+WHERE ID = 9
+GO
+UPDATE Magazine
+SET Walkthrough = 'Prep as much Rad-X and anti-radiation gear as you can and journey into the Glowing Sea and head to the Southwest portion of the map, and go South past the edge of the map borders.\n\nEnter the large pyramid looking structure and stay on the catwalks as you make your way down. As you go down the stairs through the first room full of terminals and equipment, look for the magazine on a terminal desk just below the stairs.'
+WHERE ID = 10
+GO
+UPDATE Magazine
+SET Walkthrough = 'Once you enter the school, you''ll hear several Raiders lurking about waiting to ambush you - so be on your guard. From the entrance, head up the stairs on either side of you to the second floor. You''ll need to get up to where the floor has fallen through on the third floor, so head left down the hall and make a right at the end to find the stairs to the top floor. Double back and head through the rooms to avoid the holes in the floor to get to where the giant hole is you saw coming up the stairs. Enter the room on the right to find a computer lab, and the magazine will be on a desk near the windows on the left.'
+WHERE ID = 11
+GO
+UPDATE Magazine
+SET Walkthrough = 'In order to get inside The Institute, you''ll need to progress through the game until you have the ability to built a teleportation device at one of your settlements, with help from the faction of your choice.\n\nOnce you are inside, take the elevator down and speak with the man in charge, and after which you''ll be able to move around freely. Head back to the central area, where three columns are aligned around the central artium. Look for the one with the cafeteria at its base, and head up the stairs to the fourth floor where you can find a sliding door marked for Dr. Holdren. Enter his room and go out the other side onto a balcony, where you''ll find the magazine.'
+WHERE ID = 12
+GO
+UPDATE Magazine
+SET Walkthrough = 'Prep as much Rad-X and anti-radiation gear as you can and journey into the Glowing Sea and head to the Southwest portion of the map. Once you reach the crater, you''ll find an assortment of radiation-worshipping cultists around the center of the crater. Head instead to a large wooden building on the West side of the crater, owned by Mother Isolde. Either speak with her or keep on running to the top floor of her home to find the magazine near the balcony entrance.'
+WHERE ID = 13
+GO
+UPDATE Magazine
+SET Walkthrough = 'Once you enter the church, you''ll have to face several Super Mutants and their dogs in the main area of the church. Once they have been dealt with, make your way around the giant hole in the center over to the pulpit, where you can the magazine on top of the pedestal.'
+WHERE ID = 14
+GO
+UPDATE Magazine
+SET Walkthrough = 'Upon arriving at the fleet lockup, head to the small adjoining office to the left of the large warehouse. Inside will be a desk with a terminal and keys to the lockup - the magazine will be next to the keys.'
+WHERE ID = 15
+GO
+UPDATE Magazine
+SET Walkthrough = 'From the heavily fortified raider infested camp at Andrew Street Station, turn your attention North to a bus that has crashed off the expressway and into a tall apartment building. Head into the ruins of the apartment and climb to the top where a single room is still intact. The room is lined with comic posters, and the comic itself is on a bed.'
+WHERE ID = 16
+GO
+UPDATE Magazine
+SET Walkthrough = 'Although you can interact with it when you first start the game, you won''t be able to keep it until you leave Vault 111 and come back home. You will find the magazine in the same place you left it - on the kitchen counter.'
+WHERE ID = 17
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the Assembly plant through any of the entrances, and make your way to the middle offices, and look for an elevator by the stairs. Take the elevator or stairs to the top floor and fight the Raider''s leader - Jared. Search Jared''s quarters to find a terminal with an issue of the magazine next to it.'
+WHERE ID = 18
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the middle school''s basement to find the entrance to the vault. Once inside, you will need access to the Overseer''s Quarters. To do so, head down the elevator and through the atrium, and make your way past the showers and locker room to a simulation room with a replica of a destroyed diner, and defeat the Gunner Commander to get an Access Card. Use the card to enter the Security wing that overlooks the halls below, and find the room overlooking the simulation room and kill the other Gunner Commander to get another access card to the Overseer''s Wing. Reach the Overseer''s Office and use the terminal to unlock his private quarters, where you''ll find the magazine on his bed.'
+WHERE ID = 19
+GO
+UPDATE Magazine
+SET Walkthrough = 'Arrive at the outdoor Boston Common area, which encompasses Swan''s Pond (but stay clear of the pond). Instead head to the North side of the park, close to the Park Street Station, and look for a bandstand in the middle of the park, where a skeleton lies amid many barrels of radiation. The magazine lies just next to the skeleton.'
+WHERE ID = 20
+GO
+UPDATE Magazine
+SET Walkthrough = 'Take the pulley elevator up to the expressway and fight your way South through the hordes of Gunner enemies and their Assaultron. At the far South end you''ll go up against a Gunner in Power Armor, and beyond him is a shack with a Power Armor Station. The magazine is on a toilet in the shack.'
+WHERE ID = 21
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the department store and fight off the raider as you make your way up the stairs to the top floor. You''ll find a living area complete with a red couch and TV - the magazine will be on the table in front of the couch.'
+WHERE ID = 22
+GO
+UPDATE Magazine
+SET Walkthrough = 'Fight your way into the center of the flooded town and climb up to the to rooftops where a central raider lair is with their leader. The magazine can be found under an overhang that has a red chair, and a safe just behind it.'
+WHERE ID = 23
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the museum through the basement entrance, and make your way up to the main floor. Turn left at the first display and look for a small lighted display with two mannequins - where you''ll find the magazine.'
+WHERE ID = 24
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you first arrive at the house North of Salem, you''ll probably find a man on the roof of the house taking shots at several Mirelurks trying in trespass on his home. Assist him in taking out three of the beasts, and he''ll tell you to go through the gate on the side of the house and into his cellar, located on the first floor of the house.\n\nOnce down in the cellar, you can ignore him if you want and move to the far end of the cellar where the magazine can be found on a desk.'
+WHERE ID = 25
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is one of the few collectibles that appears in a locked safe - and more frustratingly - only appears inside when the building has been occupied by reinforcements from the Brotherhood of Steel.\n\nTo get the magazine to spawn, help out Paladin Danse in defending the place from Ghouls, and then traveling with him to the ArctJet Systems so that his distress signal can be boosted.\n\nYou will also have to complete the main storyline until finishing the Reunions quest, when Brotherhood of Steel reinforcements begin appearing in The Commonwealth. Eventually, the building will finally be reinforced with additional troops - you can tell when more NPCs are guarding the entrance, have set up a Cooking Station outside, and have cleaned up the interior and set up more desks, terminals, and beds.\n\nOnce the places has been bolstered, enter the station and go left into the chief''s office, and look for an Expert Locked Safe in the corner. A key to unlock it should appear on the front desk - if it doesn''t, you''ll have to unlock it yourself to get the magazine.'
+WHERE ID = 26
+GO
+UPDATE Magazine
+SET Walkthrough = 'Normally, the Ticonderoga safehouse is locked to outsiders, so to get the magazine you must help out the Railroad until they trust you. To do so, head to the Old North Church and explore the basement until you find an old Boston Rail emblem with a button. Align the letters to spell out ''railroad'' one letter at a time, and complete their quests to earn their trust.\n\nOnce you accept the Boston After Dark quest, you''ll be escorting a runaway Synth to the Ticonderoga building. Once you make it successfully, you''ll be allowed access through the elevator. Once inside, head up the stairs and go all the way down to the hall and to the right to find the magazine by a terminal.'
+WHERE ID = 27
+GO
+UPDATE Magazine
+SET Walkthrough = 'Whether or not you have progressed through the main questline, you can still access Fort Hagen via the rooftop. Run around the back of the building to find the scaffolding leading up, and look for a roof entrance. Once inside, move immediately to the right to a kitchen area, where you will find the magazine on a kitchen table.'
+WHERE ID = 28
+GO
+UPDATE Magazine
+SET Walkthrough = 'The post itself is empty except for one frightening and powerful Super Mutant named Dead Eye, who is unfortunately guarding the magazine.\n\nFrom the entrance, head up the stairs and through the door on the left, towards a bright room with tin can alarms. You''ll be looking down on a bonfire presided over by the named Super Mutant. Take him out and drop down to find the magazine on the pedestal.'
+WHERE ID = 29
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine in question is located in the very center of the old fort - which is surrounded by Mirelurks and their nests. More important, the area is also home to the Mirelurk Queen, a huge and terrifying level 50 creature that should not be taken lightly. If you don''t plan to stick around to fight it, get in and search the central radio tower quickly before retreating.'
+WHERE ID = 30
+GO
+UPDATE Magazine
+SET Walkthrough = 'If you plan to get this magazine, you better be prepared for a tough fight on your hands. The plaza is well guarded by Gunner mercenaries both inside and out - with a few guards near the front entrance equipped with missile launchers and a Fat Man.\n\nOnce inside, head forward through the main circular dome room. The magazine is on the upper floor of this room, so keep heading straight through the doors on the other side. When you reach a door that has the ''On Air'' sign, take a left down to the end of the hall and then a right to large hall with stairs leading up. Go up the stairs and continue all the way back to the large rotunda. From the top floor, take a right and enter the first door next to the Nuka Cola Machine. You''ll find the magazine in this large room on a table next to a sofa.'
+WHERE ID = 31
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you reach the location, the magazine in question will be located in the central bunker from which the loud automated messages are coming from. Fight off the few Gunner mercs in the area and head inside. Once through the door, look to the left next to a poster and some Brain Fungus to find the magazine on a desk.'
+WHERE ID = 32
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the building and be prepared to deal with some Raiders. From the entrance, head through the door straight ahead to find some Raiders pinned down by a turret. Take them all out and head left from the barricade and enter the door on the right. You''ll find yourself in a main office area with several desks, and a small open air office straight ahead from the doorway. The door is Novice locked, but you can also just jump from the shelves over the door if you''d like. The magazine is located in the office on the desk.'
+WHERE ID = 33
+GO
+UPDATE Magazine
+SET Walkthrough = 'The ruins of Quincy are large, sprawling, and full of high level Gunner mercs, often wielding powerful missile launchers and worse. The magazine in question isn''t actually in the ruins, but on top of an expressway running right alongside the ruins, which the Gunners have built platforms leading to.\n\nOnce you''ve cleared out the place, head either through the church or the big building across the street, and make your way to the top floor where several platforms have been constructed leading to the expressway. Head up the collapsed ramp to the top floor and take out the high level named Gunner guarding the spot. The magazine can be found on the other side of the large shipping truck, on a table next to a terminal.'
+WHERE ID = 34
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is fairly simple to find. Arrive at the Robotics Disposal Ground just to the East of Sanctuary and enter the only building at the entrance to the scrap heap. Inside you will find the magazine at the other side of the small room next to a terminal.'
+WHERE ID = 35
+GO
+UPDATE Magazine
+SET Walkthrough = 'Luckily, the Atom Cats are a friendly bunch, and will not mind if you run onto their property to find the magazine. Enter through the main gate and run East past the big garage to Zeke''s trailer - the one with the orange skull on it. Inside his trailer you''ll find the magazine on the right side.'
+WHERE ID = 36
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine can be tricky to get considering the location - the entire parking garage has been converted into a deadly fun-house maze.\n\nStart by entering through the ground floor and following the arrow signs to the far end and right past the mannequins. Ignore the sign past the mannequins and head right to a series of gates controlled by switches. In order to pass through all of them, press the left switch and the right switch, and pass through the gates.\n\nKeep following the signs until you reach an intersection with two ''one way'' signs. Go left and carefully make your way past the trapped floor of tripwires and scales to get to the second floor.\n\nFrom here, go left and stay to the outer halls and windows - being mindful of traps - until you reach an XXX sign pointing left. Follow it to wrap around the inside of the structure to take another ramp up to the third level.\n\nFrom the third level, follow the path to the windows and stick to them going left around the outer edge of the lot - until you have to fight off some Ghouls, followed by a Glowing One, and take the ramp to the fourth floor.\n\nThe top of the fourth floor is filled with more tripwires and scales so more carefully, going past the sealed door to the left until you reach a set of three doors. Doors 1 and 3 lead to dangerous traps, so head right through Door 2. Go left past the tripwires until you get to an area with two cages on the left, and Dead End signs on the right. Ignore the dead end signs and pass through them to find a small living area shack - the magazine will be on a crate next to a lantern.'
+WHERE ID = 37
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the store and be prepared to face several Super Mutants lurking in the ruins. The magazine itself is not far, but well guarded. As you enter the first area, start climbing the escalators all the way to the top floor. There''s a store here with several gates as doors, and are guarded by a minigun-toting Super Mutant. Once he''s defeated, enter the store and look for the small room in the center with the double doors - the magazine is inside in the middle.'
+WHERE ID = 38
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is located in a building not specifically tied to any location - but is located in between Bunker Hill and the USS Constitution. Look for a small green building with a Laundry sign on it, and enter the Charlestown Laundry. You''ll find the magazine right as you enter, in a shopping basket on top of the washing machines in the center of the room.'
+WHERE ID = 39
+GO
+UPDATE Magazine
+SET Walkthrough = 'The Faneuil Hall is crawling with Super Mutants, so expect a tough fight. The magazine in question is located near the back entrance, on the top floor. To get there, take the first flight up and enter the central hall, then climb the stairs on the opposite side to get onto the balcony and return to the back of the building, and continue climbing the stairs to the top floor and enter the door - where the magazine will be on the right as you enter.'
+WHERE ID = 40
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the College Square area and take out all the Ghouls in the area, and turn your attention to the College Square Metro Station. Head down the stairs and inside the station, and make your way down the second stairs to an area with several market stands. Head across to the storefront on the opposite side where you can spot the magazine behind the counter, on top of an empty safe. The door leading to it is Expert Locked, but there is a key to the door downstairs. Sadly you can''t fit through the gap over the counter.'
+WHERE ID = 41
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine is located inside the friendly broadcast station. Simply enter the bunker and go through the door, where you''ll find it in the large room on a table between a toaster and a coffee pot.'
+WHERE ID = 42
+GO
+UPDATE Magazine
+SET Walkthrough = 'You can find this magazine in the first trailer to the right of the main office and pool - in a metal trailer. You''ll find it on one side of the trailer closest to the pool.'
+WHERE ID = 43
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine at this location is not actually located inside the station, but in the Midway next door on the right. It''s also full of Raiders, including one in Power Armor - so take extra care clearing out the place.\n\nOnce you do, enter the Midway building and ascend to the second floor, where you''ll find the magazine next to a Cooking Station.'
+WHERE ID = 44
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the friendly neighborhood of Goodneighbor and make your way to The Third Rail, a bar and lounge. Once inside, don''t head down the stairs, but instead take a right an enter the bathrooms, where you''ll find the magazine in one of the stalls.'
+WHERE ID = 45
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine is easily found in the friendly neighborhood of Bunker Hill. Enter the area and climb to the very top of the tower to find the magazine on a desk at the top.'
+WHERE ID = 46
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the friendly neighborhood of Goodneighbor and make your way to The Hotel Rexford. Once inside, head over to the counter on the right and look behind the desk to find the magazine.'
+WHERE ID = 47
+GO
+UPDATE Magazine
+SET Walkthrough = 'Travel to Diamond City and head to the schoolhouse, which is left of Arturo''s and the Diamond City Swatters (look for the large yellow bus on top of the building).\n\nOnce inside, head into the bedroom area on the first floor and look under the stairs to find the magazine.'
+WHERE ID = 48
+GO
+UPDATE Magazine
+SET Walkthrough = 'The Cabot House is locked up tight, and can only be entered once you''ve entered the service of Mr. Jack Cabot. Even then, the location of the magazine is in his personal quarters, a place you won''t be able to reach until the entire Cabot questline has concluded.\n\nIn order to gain access, you must first either be level 20-30, or kill the mercenary guards outside of Parsons State Insane Asylum. Cabot''s number two, a ghoul named Edward Deegan, will approach you at a bar - either in Diamond City''s Dugout Inn, Goodneighbor''s Third Rail, or Bunker Hill. Accept the job and meet with Jack Cabot, and complete his quests until you return to the Parsons State Insane Asylum.\n\nHow you finish the final quest is up to you - regardless of which you''ll now have access to the entire Cabot House, where you''ll find the magazine on the top floor in Jack''s room.'
+WHERE ID = 49
+GO
+UPDATE Magazine
+SET Walkthrough = 'Travel to the Greater Mass Blood Clinic South of Fort Hagen and eliminate all the Bloodbugs and Bloatflies. Once inside the blown out building, head up the broken ramp to the second floor and look on the East side of the building for a sealed room with a locked Terminal. If you''d rather not tangle with the high level terminal, drop down the hole nearby to the first floor, where you can find a Novice locked Terminal that has the password to the sealed room.\n\nGrab the keys near the door to head out and back around to the font, and enter the sealed room to find the magazine on the desk.'
+WHERE ID = 50
+GO
+UPDATE Magazine
+SET Walkthrough = 'Once inside the hospital, be prepared for several Super Mutants to come running once the bullets start flying. You don''t have to go far into the building, but it can be deadly nonetheless (A Super Mutant Suicider is usually lurking just to the left of the atrium!)\n\nProceed up the stairs on the right, go under the ramp to the other side where small room has a window looking in. Unlock the door to enter the small room, and you''ll find the magazine on the desk.'
+WHERE ID = 51
+GO
+UPDATE Magazine
+SET Walkthrough = 'Unlike most magazines, this collectible is locked away inside a terminal and can only be dispensed as a prize for collecting 50 Book Return Tokens.\n\nTo find the Book Return Terminal, either lockpick the back entrance that leads directly to it, or enter through the metro station, and either bust through the entrance or use your charisma to fake being an employee. If you smooth-talked your way in - the robotic staff the runs the library will leave you alone. If not, prepare for a lot of guns as you make your way across the courtyard and up to the second floor on the backside of the library.\n\nThe best way to get enough Book Return Tokens is to find Overdue Books, which are scattered around The Commonwealth. Each Overdue Book is worth 5 tokens, so you''ll only need 10 books total. Try checking the many schools in the Boston area, like the Shaw High School, East Boston Preparatory School, and South Boston High School.\n\nThere are also 3 x Overdue Books on a skeleton in a Pulowski Preservation Shetler outside of the front of the library to the left of the Front courtyard. You can also find 3 x more Overdue Books on shelves in the bottom level of the nearby Trinity Church (in Trinity Plaza).'
+WHERE ID = 52
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine in question is located near the entrance, just behind the front desk and to the left in a sealed security locker. A nearby terminal can be hacked to gain entry, and you won''t have to worry about the friendly robots getting in your way. Of course if you decide to explore the rest of the home, be prepared for some unexpected visitors...'
+WHERE ID = 53
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is found at the very bottom the insane asylum, sealed away in a secret room in a secret basement down a secret elevator. The point is - you won''t be able to get near this collectible until you''ve completed a number of quests in the Cabot questline.\n\nTo start, you must first either be level 20-30, or kill the mercenary guards outside of Parsons State Insane Asylum. Dr. Cabot''s number two, a ghoul named Edward Deegan, will approach you at a bar - either in Diamond City''s Dugout Inn, Goodneighbor''s Third Rail, or Bunker Hill. Accept the job and meet with Jack Cabot, and complete his quests until you return to the Parsons State Insane Asylum.\n\nTravel with Jack Cabot through the main offices of the Asylum, and then through the courtyard into the asylum itself. Keep following him as he heads deeper and deeper below the asylum - fighting off hordes of Raiders - up until you reach an elevator to the basement. Once you arrive, you''ll find the secret of the Cabot House locked away in a sealed room which Raiders are trying to open.\n\nHow you deal with what comes next is up to you - but when you are finally able to open the sealed room, you''ll find the magazine in a far corner near the windows.'
+WHERE ID = 54
+GO
+UPDATE Magazine
+SET Walkthrough = 'You can only obtain this magazine while undertaking the main questline, when a certain quest has you enter the building in search of a Synth Courser. There will be many Gunners seeking to do the same thing. Make your way up to the second floor and into the main lobby, where the first band of Gunners will run to attack you. Finish them off and move through the second floor hall and up to the third.\n\nOn the third floor hall, you''ll move to the right into a long room that circumvents the barricaded hallway - it is here that you can find the magazine in between some couches.'
+WHERE ID = 55
+GO
+UPDATE Magazine
+SET Walkthrough = 'Unlike most magazines, this one is locked behind doors that can only be accessed during a particular companion''s side quest.\n\nIn order to get this magazine, travel to The Third Rail in Goodneighbor, and look for a side room off the bar where two Gunners are harassing a former Gunner named MacCready. Agree to hire him as your personal merc, and start warming him up to you. MacCready is a sucker for helping those in need (but getting the best price for your work), as well as stealing or pickpocketing - but he hates senseless murder or chem abuse.\n\nOnce he''s gotten to like you, he''ll ask to start on his personal side quest - this will include traveling to the Mass Pike Interchange to kill the two Gunners that were on his case. After this, continue to get in his good graces and he''ll finally let slip that he''s looking for a particular cure found in Med-Tek Research - and he has the codes to get into the lab sub-levels.\n\nTravel to Med-Tek and find a terminal on the top floor office, whereupon MacCready will give you the codes to override the lock down. Now return to the airlock terminal and move beyond it to an elevator going down. At the bottom of the sub levels research rooms you''ll find a large main room sealed by a terminal. This room will have the cure, as well as the magazine nearby.'
+WHERE ID = 56
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine located in the labs isn''t that deep in, and is actually located in the Director''s office on the top floor of the main entrance. Whether or not you decide to indulge the receptionist robot by becoming a researcher is up to you (it leads to an interesting side quest further into the labs) but there are only two ways to get into the Director''s office - break the Master Lock, or destroy the robot to get the key.\n\nWhichever you decide to do - be on guard for the ghoulified Director, and grab the magazine in his desk.'
+WHERE ID = 57
+GO
+UPDATE Magazine
+SET Walkthrough = 'Although you can interact with the book at the start of the game, you won''t be able to obtain it until you leave Vault 111 and return to your old home. Enter Shaun''s room to find it on the floor near his crib, under some furniture.'
+WHERE ID = 58
+GO
+UPDATE Magazine
+SET Walkthrough = 'To locate the magazine, enter the Brewery through the front entrance and ascend the stairs up and into the main brewery factory floor. Across the catwalks is a small manager''s office on an upper level - which you can reach by taking the catwalk across to the other side. Fight of the Raider boss inhabiting the office, and you''ll find the magazine in a corner.'
+WHERE ID = 59
+GO
+UPDATE Magazine
+SET Walkthrough = 'As you come upon Hardware Town, a would-be Settler will try to lead you inside to help save someone - don''t buy it. Raiders are waiting to ambush you in the main storeroom.\n\nTo get the magazine, you''ll need to get to the upper office above the store. Head through the back room and look for a row of crates that form a staircase along the middle row of shelves. Head up the crates and onto the far wall to reach the upper office door, and you''ll find the magazine in the main office room.'
+WHERE ID = 60
+GO
+UPDATE Magazine
+SET Walkthrough = 'The Ironworks is a heavily guarded steel plant manned by fanatical raiders with a penchant for flamethrowers and molotov cocktails. Fight your way inside and up onto the top floor of the large plant area, and head across to a stairwell leading to the main forge.\n\nInside the forge you''ll likely interrupt a some really intense initiation rituals from the leader of the Forged. It''s part of a side quest - so respond as you will, which probably includes fighting the extremely tough Power Armored boss with the flaming sword. Once he''s down, look for the magazine on the catwalk where he was initially standing.'
+WHERE ID = 61
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the Raider-infested Combat Zone and make your way into the main arena, where the rest of the Raiders will soon turn against you.\n\nHead down to the front row where you''ll find a table with the magazine on it.'
+WHERE ID = 62
+GO
+UPDATE Magazine
+SET Walkthrough = 'The entrance to the treatment plant is often guarded by Super Mutants, so proceed with caution as you make your way to the entrance. Once inside, you''ll only have to worry about a few automated turrets as you head down the elevator, and go right to a sealed door with a button to unlock.\n\nOn the other side of the door, take out the ceiling turret, and go left into the office, where you''ll find the magazine on desk next to the windows.'
+WHERE ID = 63
+GO
+UPDATE Magazine
+SET Walkthrough = 'You''ll find this magazine on your way to completing the main questline, and assisting Preston Garvey against the Raiders in Concord.\n\nEnter the Museum and head right through the displays to the back staircase, and then climb up the left side to the top floor, where you can meet Preston in the top floor room at the front. Inside, check the table with the Terminal that Sturges is working on.'
+WHERE ID = 64
+GO
+UPDATE Magazine
+SET Walkthrough = 'To get this holotape, you will need to progress far enough into the main quest to enter the basement of the Memory Den. Once you have completed the Reunions quest in Fort Hagen, return to Goodneighbor and enter the Memory Den. Speak with the Doctor inside and she will let you into her lab in the basement. When she unlocks the door, head to the left side of the room where the magazine is sitting in the corner.'
+WHERE ID = 65
+GO
+UPDATE Magazine
+SET Walkthrough = 'If you''ve been to Fort Hagen early in the game, you won''t be able to get to the Command Center - as it is only available once you have started the Reunions quest.\n\nOnce you enter Fort Hagen, head down to the first floor and fight your way through the office rooms to an elevator on the far side. Ride it down to the basement where you can enter the Command Center sub-section.\n\nYou can spot the magazine as you head down the main hall, but the doors along the wall are sealed. Instead, go right and keep fighting your way through the halls and tunnels until at last you reach your target. The magazine is located in the very same room as your quest target, on the white desk next to a personal terminal.'
+WHERE ID = 66
+GO
+UPDATE Magazine
+SET Walkthrough = 'Although you cannot obtain an actual magazine, you can find the holotape itself on a terminal at the start of the game.\n\nOnce you awake from your long sleep and move to escape the Vault, keep traveling down the halls until you reach an intersection with a kitchen cafeteria area. Look for a recreation terminal on the far side, and you can eject the holotape game from the terminal to use with your Pip Boy.'
+WHERE ID = 67
+GO
+UPDATE Magazine
+SET Walkthrough = 'You can obtain this magazine when you first get to Diamond City, and enter the detective agency. Once inside, head past the front desk to the far right corner where the magazine lies on another desk.'
+WHERE ID = 68
+GO
+UPDATE Magazine
+SET Walkthrough = 'If you haven''t already, you''ll need to convince the inhabitants of Vault 81 to let you enter. This will either require some charisma on your part, or several Fusion Cores if they don''t buy your story.\n\nOnce inside, head down the main elevator, and bypass the kid trying to get your attention. You''ll be looking for a Barber Shop just to the left of the staircase on the lower floor. Enter the room and look for the magazine on the right side.'
+WHERE ID = 69
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, enter any one of the many service hatches located around the city of Concord. There''s the main entrance where the Deathclaw bursts out from during the main questline, as well as one down an alley nearby, and another behind a bus stop at the edge of town.\n\nOnce inside, head down the sewer line and follow the water to a Mirelurk huddled over the corpse of a dead Raider. There''s a small alcove next to the raider that leads to a small room with a steamer trunk and the magazine.'
+WHERE ID = 70
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is fairly easy to locate, as the un-flooded part of the quarry consists of some stone blocks and three small trailers. The magazine is located in a trailer near the quarry itself, just to the left, and opposite the pump generator.'
+WHERE ID = 71
+GO
+UPDATE Magazine
+SET Walkthrough = 'To obtain this magazine, enter the shipyard and make your way through the offices into the main docking area where a large boat is moored. You''ll need to hop on this boat and fight off any Mirelurks you encounter, and you''ll find the magazine in the main cabin of the ship.'
+WHERE ID = 72
+GO
+UPDATE Magazine
+SET Walkthrough = 'There are several ways to get to the magazine, and each is a viable approach. Going through the Mass Pike East and West tunnels are filled with Ghouls, but will eventually pass through a side tunnel on the Southern side leading to a sealed gate that is heavily locked.\n\nIf you''d rather not pick or hack the locks, consider an alternate route through the Boston Police Rationing Site. There is a maintenance tunnel in the warehouse that leads directly to the room with the magazine, but the doors to the warehouse are barred. To get in, you''ll need to platform jump from the railway onto the roof, and around to the other side to find a window in.\n\nWhichever route you take, look for a dead body with an overturned chest, and the magazine will be among the contents.'
+WHERE ID = 73
+GO
+UPDATE Magazine
+SET Walkthrough = 'Upon your first time entering the cannery, you''ll find a trader arguing with the owner - Theodore Collins - about the quality of his canned meat. The magazine in question is on the top level of the factory floor, in a locked managers office. There are two ways to get in - be sneaky, or be confrontational.\n\nIf you''ve favored sneaking and pickpocketing, go ahead and swipe the key while his back is turned to you, and open the door up (sometimes his robot workers may turn on you for this). If not, you can indulge yourself in a little side-questing and investigate the factory''s basement elevator, and upon completing a lengthy and harrowing investigation, you''ll be able to access the office.'
+WHERE ID = 74
+GO
+UPDATE Magazine
+SET Walkthrough = 'As you approach the plant, be sure to mind the modified laser tripwires that cant be disarmed on the perimeter of the building. Once inside, take an immediate right and head down the conveyor belt leading to the basement area.\n\nGo through the door on the left, and then another door on the right to reach a locker room with a large Steamer Trunk. You''ll find the magazine on a locker room bench.'
+WHERE ID = 75
+GO
+UPDATE Magazine
+SET Walkthrough = 'Travel to the salvage yard and be prepared to fight off a large force of Super Mutants that have infested the place. Your target is a large junk-pile-turned-encampment in the center, with a large steel trailer perched on top. Make your way up the makeshift platforms and take out the leader guarding the area. You''ll find the magazine inside the trailer to the right.'
+WHERE ID = 76
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, you''ll need to make your way up the shipreck to the main deck. That means fighting your way through the torn out hull and look for several cargo containers forming a bridge to the upper deck.\n\nOnce up top, head through the raider camp and look for a patio table with an umbrella, where the magazine is located.'
+WHERE ID = 77
+GO
+UPDATE Magazine
+SET Walkthrough = 'Probably one of the easier magazines to obtain, the quiet and desolate Mystic Pines building on the edge of Lexington can easily be accessed, and the magazine in question is on the table just to the left of the front door.'
+WHERE ID = 78
+GO
+UPDATE Magazine
+SET Walkthrough = 'While you can either enter the shopping market from the front entrance or receiving dock, but the front way is probably easier and filled with less Ghouls. From the entrance, head left past the checkout registers, and then take a right when you find the in-store diner. The magazine you''re looking for will be right in front of the pharmacy window, conveniently placed on a magazine rack.'
+WHERE ID = 79
+GO
+UPDATE Magazine
+SET Walkthrough = 'There are two ways to go about getting this magazine, the sneaky way, and the guns blazing way. If you find youself with high lockpicking or terminal hacking, enter the brewery''s front entrance, where an Expert locked door tied to an Advanced locked terminal impede your entry into the factory.\n\nIf not, head around behind the brewery to The Gwinnett Restaurant, and clear out the Super Mutant menace inside. Head left down the stairs and through the bar area, down a hall and right over some debris into the kitchens - where you''ll find a hole in the wall leading to mirelurk-infested pipes that head into the brewery.\n\nNo matter your method, hop from the catwalks to the brewery vats and use the pipes to cross to the other side with more catwalks, and head up the paths along the top to a managers office high above with the magazine.'
+WHERE ID = 80
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you arrive at Walden Pond, you''ll find that the main building - the gift shop - has a locked basement door with a note that will clue you in on an alternate entrance via a nearby drainage pipe. Head down to the pond''s edge to find the pipe and enter, where four Raiders have made camp. In the first cave-like room where two raiders are chatting, you can find the magazine on a barrel next to a lantern.'
+WHERE ID = 81
+GO
+UPDATE Magazine
+SET Walkthrough = 'Both the main entrance and roof entrance as sealed by Master locks, which will most likely force you to seek entrance via other means. Head around the back to two large pipes sticking into the water and enter through the maintenance hatch. Inside, you''ll need to fight off swarms of Mirelurks as you make your way to the top of the room with the pipes.\n\nOnce inside the main part of the power plant, you''ll find most of it has been taken over by Raiders. Head to the far side of the main floor that''s been barricaded and take the stairs up and blast through the raiders until you enter a central office high above the ground floor, where you can find the magazine on a side desk next to a poster for Sugar Bombs, and a Bobblehead.'
+WHERE ID = 82
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is thankfully located in a pretty harmless area, as the Marina is full of Mr. Handys. Enter one of the large marina warehouses and pass through to a few small rooms that connect the warehouses. You''ll find the magazine on a living area table next to a Nuka Cola machine.'
+WHERE ID = 83
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you enter the decrepit ruins of what was once both a University, and then a trading hub, you''ll find only abandoned shacks now. From the basketball court, head through the abandoned settlement and into the large building on the far side called Sedgewick Hall.\n\nInside, beware of a Synth waiting to ambush you above. Head up the stairs and then up the blue ladder, and take a right through some curtains to a room with some busted terminal and a blackboard on the far side. Next to the board you can find the magazine on a small table.'
+WHERE ID = 84
+GO
+UPDATE Magazine
+SET Walkthrough = 'In order to get this magazine, you must complete a number of quests along the main quest path, and either side with The Institute or The Brotherhood of Steel. Both of these faction''s main questlines will eventually lead to the Mass Fusion Building via a rooftop entrance, which is otherwise inaccessible.\n\nThere is an alternate way of getting on top of the glass floor without siding with institute or brotherhood and that is by using jet boosters. Climb upstairs as far up as you can and boost up to the ledge of the top two floors. You''ll notice an opening on the north side of the ceiling. Boost up through it and that will get you to the top of the glass floor.\n\nOnce you travel down the elevator to an upper level section above the rest of the building (which you can view through the glass floor), head right and look for a blown out room with a ramp and a small second floor on the far side. Travel to that side of the upper floor to find the magazine on a desk.'
+WHERE ID = 85
+GO
+UPDATE Magazine
+SET Walkthrough = 'If you''re heading to find this magazine, bring plenty of RadAway and Rad-X, and a Hazmat Suit or Power Armor if you can find some. You can find the cave faaaaaar to the Southwest, even past the Crater of Atom, off the edge of the map border. Your only real enemy is a Deathclaw napping in front of the cave entrance.\n\nOnce inside, don''t worry about the turrets, spotlights, and robots - Virgil is perfectly friendly, even when he''s not around. To get the magazine, head into the makeshift laboratory and look on the right side to find it next to a toolbox.'
+WHERE ID = 86
+GO
+UPDATE Magazine
+SET Walkthrough = 'As you enter the fishpacking plant, all may seem too quiet - and for good reason. Take the center elevator down to the conveyor belt area and be prepared to fight off a Synth ambush. To find the magazine, you''ll need to follow the main conveyor belt line all the way to the end where it leads to a giant staircase heading back up to the entrance. Instead, go under the stairs to the end of the hall where you''ll find the magazine next to a dead Raider at his bed.'
+WHERE ID = 87
+GO
+UPDATE Magazine
+SET Walkthrough = 'When you enter the lab, you''ll find that crazy gas has spread throughout the facility, and is making the Gunner mercs inside tear each other apart. From the entrance, head through the door on the left and through the locker rooms back up to the main floor. When you head down the next hallway into a long room, look for a desk by the door with an indoor window, and you''ll find the magazine on the desk.'
+WHERE ID = 88
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine isn''t too hard to find, and there''s only a couple of angry robots to contend with. From the entrance, cross the large hall to the opposite side and climb up the makeshift stairs to the second floor. Then cross back to the other side above the entrance where you''ll find the magazine on a desk.'
+WHERE ID = 89
+GO
+UPDATE Magazine
+SET Walkthrough = 'To obtain this magazine, you will need to start a quest that takes you to this location. That means heading to the Cambridge Police Station and talking to Paladin Danse, and accepting his offer to raid ArcJet Systems for a Deep Range Transmitter.\n\nOnce inside with Danse, you''ll find that the door on the other side of the atrium is now open, and will lead further in to a room locked by a terminal. Once you head through and fight off the first wave of Synths, you''ll come to another large open room where more Synths will crawl in on all sides. After which, head up the stairs and make your way around the large room before dipping back down, and you''ll resurface in the small room with the CEO''s Terminal. You''ll find the magazine on the table next to the terminal.'
+WHERE ID = 90
+GO
+UPDATE Magazine
+SET Walkthrough = 'As you enter the electronic store, you''ll notice several robots all over the place - luckily they wont attack you unless you decide to activate them via a terminal in the basement. Head through the hole in the floor to the basement and enter the blue door, and hack your way into the room beyond. Here you''ll find the magazine, as well as the terminal to activate the robots (which you can test your new holotape on).'
+WHERE ID = 91
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the raider infested building and be prepared for a big battle. Once you''ve beaten back the opposition, head through the bar area and down the hall, then make your way over the debris into a back room lounge area with a mannequin on a table. The mannequin is holding the book in its hand.'
+WHERE ID = 92
+GO
+UPDATE Magazine
+SET Walkthrough = 'This book is fairly simple to find - but can be dangerous at certain times, as a large group of Ghouls may wander the ground at night.\n\nTo find the book, enter the cemetery and head to the large towering tree in the middle of the graveyard, and you''ll find it on the ground at the base of the tree.'
+WHERE ID = 93
+GO
+UPDATE Magazine
+SET Walkthrough = 'Enter the race track and take out the Raiders and Triggermen and their boss. The magazine in question is on the top floor of the blown out main building near the race course. To get up to the second floor, cross the race course (let the robots do their racing) and look for a large pile of junk with a platform going through several structures and into the main building. Here you''ll find the magazine by a chair and desk.'
+WHERE ID = 94
+GO
+UPDATE Magazine
+SET Walkthrough = 'the location of this magazine is deep in a sewer that is home to a deranged killer. You can find the entrance by looking for a skeleton next to a sewer manhole with markers around it.\n\nOnce inside, follow the trail of skeletons and corpses, past a creepy skeleton with a brahmin skull, and up and past a large generator into a room with a staircase heading up. Next to the stairs is a large security gate and fence, and inside you''ll find the magazine along with a safe.'
+WHERE ID = 95
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, you must enter the Roxbury Station and clear out the Super Mutants infesting the place. Make your way down into the subway station. There are subway cars that are blocking the rest of the station, and in order to move through, you''ll need to use a nearby button switch. It''s located behind a locked door... but there''s also a hole you can use to bypass.\n\nHitting this button will move the train car to let you pass into the second platform. Another button is behind an unlocked security gate, which allows passage to the other side of the tracks. There''s an alcove to the left with a lit candle in an open filing cabinet, where you will also find the magazine.'
+WHERE ID = 96
+GO
+UPDATE Magazine
+SET Walkthrough = 'The location of this magazine is deep in the Malden Center, in a Raider encampment being overrun by Synths. From the entrance, travel down and through the subway tunnels to the other side, then head left into a room with an elevator down.\n\nIn the basement, follow the paths through the blown out holes into a trainyard being used as the Raider''s main base - and last stand. When the fighting dies down, look for a red traincar on the side, and enter it to find the magazine.'
+WHERE ID = 97
+GO
+UPDATE Magazine
+SET Walkthrough = 'The location of this magazine is pretty straightforward, as the area is pretty small. Enter the turbine area through the main office and clear out the bugs, then make your way through the flooded area to the office on the far side. It is there that you will find the magazine. Beware a Mirelurk ambush on your way out.'
+WHERE ID = 98
+GO
+UPDATE Magazine
+SET Walkthrough = 'You won''t be able to access this manual until you have started along the Railroad questline, which can be started at the Old North Church. You''ll need to head into the crypts below the church and enter letters on a dias to spell out'
+WHERE ID = 99
+GO
+UPDATE Magazine
+SET Walkthrough = 'This particular manual is located in the captain''s quarters of the U.S.S. Constitution, which is unfortunately locked. In order to obtain it, you must embark on a series of quests for the ships captain, Captain Ironsides. This will involve fixing some fuses, getting a spare part, and re-obtaining parts from scavengers, as well as entering a turbine.\n\nOnce you''ve completed the fetch quests, Captain Ironsides will task you with one last mission, and request you repair and object located inside his quarters - and finally give you the key.'
+WHERE ID = 100
+GO
+UPDATE Magazine
+SET Walkthrough = 'This manual is located deep within the federal bunker, in the lair of the raider leader - Red Tourette. You can find the path here several ways. Entering the bunker, you can either take the first right at the intersection - or try and lockpick/hack your way into the stockpile. If not, you can also go right from the sealed door to find a path to the other side, where a door on the far end leads to Red Tourette. If you''d rather avoid most of the raiders, consider heading through the secret passage in the Lonely Chapel nearby.\n\nYou can spot the book on Red Tourette''s table among other letters.'
+WHERE ID = 101
+GO
+UPDATE Magazine
+SET Walkthrough = 'Travel to the Glowing Sea and find the inconspicuous shack, where you''ll find a secret hatch inside leading to a high-tech bunker. The book you are looking for is on the bottom floor of the bunker, found on the left side of the computer equipment.'
+WHERE ID = 102
+GO
+UPDATE Magazine
+SET Walkthrough = 'The manual in question is easy enough to find in the small fort. You can either enter through the locked door on the right as you enter, or take the long way around on the right. Either way, you''ll need to unlock one last door on the far right to enter an office with the book.'
+WHERE ID = 103
+GO
+UPDATE Magazine
+SET Walkthrough = 'This manual can only be obtained once you have undertaken the main quest, Reunions. Enter Fort Hagen through the roof and fight your way down to the first floor where an elevator will no longer be boarded up - leading to a basement where the command center is.\n\nOnce inside, make your way through the facility until you come to a hall that serves as a personal living area. The first door on the left past the armor will open to a bedroom, where you can find the book on a bedside table.'
+WHERE ID = 104
+GO
+UPDATE Magazine
+SET Walkthrough = 'This manual is heavily guarded by a large encampment of Raiders in a water-world like fortress made up of tied together boats and flotsam, with a main stronghold built onto the partially capsized freighter at the far end.\n\nTo find the manual, battle your way through the raiders working your way to the large freighter and look for a barge on the left, where you can spot a moving air gondola that will get you aboard the freighter. Once aboard, head up two flights of stairs and look for a balcony that juts out around the center of the stronghold, where you can find the book at the edge next to a table and lantern.'
+WHERE ID = 105
+GO
+UPDATE Magazine
+SET Walkthrough = 'This manual is found in the barracks section of the National Guard Training Yard. To get to it, you must first enter the main Recruitment Office. On the right side, you can find a sealed door activated by a locked terminal. If you''d rather not hack it, look for the key in a main office desk in the room above.\n\nEnter the door that connects to the barracks building, and fight off the ghouls as you get to the second floor of the barracks. Cross the hallway and you''ll find a collapsed room that leads into a mess hall cafeteria on the first floor - the book is found on a lunch table.'
+WHERE ID = 106
+GO
+UPDATE Magazine
+SET Walkthrough = 'Head to the satellite array and prepare for a long and dangerous fight against several Super Mutants, one armed with a Missile Launcher. Your target is the central satellite, which has had its dish fallen off. Climb the base of the array and reach a makeshift catwalk that wraps around the edge to find the book.'
+WHERE ID = 107
+GO
+UPDATE Magazine
+SET Walkthrough = 'To obtain this manual, enter the bunker beneath the satellite, where you''ll find a locked Intel room just down the stairs. The door is sealed by a nearby terminal. If you are unable to hack it, continue down into the base and look for a set of locked double doors guarded by a named minigun-toting raider. The basement beyond is radiated, but contains the Intel room key in a toolbox.'
+WHERE ID = 108
+GO
+UPDATE Magazine
+SET Walkthrough = 'Once you arrive at the Westing Estates via the Northeastern entrance, head into the first intact building and get up on the second floor. From the top, use the walkways to get across to a center platform, where you can find a small shack with a bed and the magazine on the edge.'
+WHERE ID = 109
+GO
+UPDATE Magazine
+SET Walkthrough = 'Once you enter the Shaw High School, take out the lingering Super Mutants before turning attention to an office to the left of the entrance. Lockpick the door and enter the Principal''s office, and lockpick his desk to find the Library Key.\n\nNow make your way to the second floor hall and find the entrance to the Library, and fight the Super Mutant Leader inside. Once he''s dead, make your way to the back wall and left to a small room with the magazine.'
+WHERE ID = 110
+GO
+UPDATE Magazine
+SET Walkthrough = 'To obtain this magazine, enter the charter school and be on the lookout for Ghouls that can pop out from any crevice or corner. Your target is the second floor double doors - which normally you''d need to progress around the bottom floor to find a way up through an elevator. Instead, try to jump from the broken staircase up to the second floor (jumping from the railings help). The main double door is locked, so head left around the corner to where the floor has broken through in front of another door - where you can open it and jump through.\n\nTake out the Ghouls in this area and then look for the magazine on a desk with a terminal.'
+WHERE ID = 111
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is fairly easy to find - simply walk into Hubris Comics, and look on the front counter as soon as you enter to find the magazine on the counter.'
+WHERE ID = 112
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, enter the high school and take out the large force of raiders assembled in the area. You''ll need to make it to the cafeteria, so head left from the entrance, and then right through a door leading to a hall and the cafeteria.\n\nCheck the back corner of the area to find a collapsed floor leading into the basement - so head down and keep gunning down the raiders until you reach an underground pool where the Raider leader is. Defeat him and you''ll find the magazine just to the left of his makeshift throne (as well as a Fat Man).'
+WHERE ID = 113
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, approach the wreck of the boat that''s crashed into the bridge, and head down the ladder to the main deck of the boat, and enter the cabin. You''ll find the magazine here in the living quarters.'
+WHERE ID = 114
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is located within a highly radioactive crater-turned cultist commune, enforced by the Children of Atom. Expect high resistance if you trespass against their wishes, and be prepared for a tough fight against their Gamma Guns. Look for one of the cabins on the far North side, which has a ladder down below the cabin to a lower section by the radioactive pool. Here you will find the magazine by the edge on a table.'
+WHERE ID = 115
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, look for the kiosk that sits on the edge of the pier past the two houses on the water''s edge. Beware of the mines that litter the boardwalk - and a tripwire inside the kiosk itself. The magazine itself is located behind the counter.'
+WHERE ID = 116
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is found in the cabins the make up the wooded area, located near the tall stone tower. You can find the magazine on top of a sleeping bag on the side of the wooden shacks.'
+WHERE ID = 117
+GO
+UPDATE Magazine
+SET Walkthrough = 'You can find this magazine in a secret room at the Gorski Cabin. Enter the small area and clear out the ghouls, before going down into the Root Cellar. Once inside, find the secret bunker where Gorski the Ghoul was trying to make his own mini-nuke. You''ll find the magazine to the left of the door as you enter.'
+WHERE ID = 118
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is located in the friendly robot run oceanological building in Nahant. Simply enter the building and head to the back room, where you''ll find the magazine along the left wall.'
+WHERE ID = 119
+GO
+UPDATE Magazine
+SET Walkthrough = 'To find this magazine, you''ll need to head deep into the sinkhole. Start by jumping down and taking out the Deathclaw that lives nearby, and then jump into the rushing water to fall underground into a cave where the water dumps out. Here you''ll find a small living area with Radroaches, and the magazine found at the Cooking Station.'
+WHERE ID = 120
+GO
+UPDATE Magazine
+SET Walkthrough = 'This magazine is easily found in the lone cabin near Sanctuary. Simply enter the cabin and take out the nearby Bloatflies, and look for the magazine on top of the old music playing cabinet.'
+WHERE ID = 121
+GO
+UPDATE Magazine
+SET Walkthrough = 'The magazine here is hiding in one of the several cabins that encircle the hippie commune. From the main shed in the middle, look to the East by a grain silo to find a green cabin on a small hill. Enter the shack and take out the Ghouls inside to find the magazine by the body of a Settler.'
+WHERE ID = 122
+GO

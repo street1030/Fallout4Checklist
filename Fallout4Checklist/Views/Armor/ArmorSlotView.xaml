@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.ArmorSlotView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             mc:Ignorable="d">
+    <Grid>
+        <Image Source="{StaticResource Outline}" />
+        <Image Visibility="{Binding IsHatVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource Hat}" />
+        <Image Visibility="{Binding IsEyeVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource Eye}"  />
+        <Image Visibility="{Binding IsMouthVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource Mouth}" />
+        <Image Visibility="{Binding IsBodyVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource Body}" />
+        <Image Visibility="{Binding IsChestVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource Chest}" />
+        <Image Visibility="{Binding IsLeftArmVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource LeftArm}" />
+        <Image Visibility="{Binding IsRightArmVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource RightArm}" />
+        <Image Visibility="{Binding IsLeftLegVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource LeftLeg}" />
+        <Image Visibility="{Binding IsRightLegVisible, Converter={StaticResource boolToVisibilityConverter}}" Source="{StaticResource RightLeg}" />
+    </Grid>
+</UserControl>

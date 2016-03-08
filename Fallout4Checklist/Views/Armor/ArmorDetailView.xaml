@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Fallout4Checklist.Views.ArmorDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Fallout4Checklist.Views"
+             mc:Ignorable="d" 
+             xmlns:ctrl="clr-namespace:Fallout4Checklist.Controls"
+             xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <DockPanel Margin="0, 0, 0, .5">
+            <ctrl:HoverCheckBox Style="{StaticResource ExpandableSquareCheckButton}" />
+            <Button Style="{StaticResource ItemTooltipButton}" />
+            <Border Style="{StaticResource CheckableItemHeaderContent}">
+                <TextBlock Style="{StaticResource WhiteBoldVerticallyCenteredText14}" Text="{Binding Armor.Name}" />
+            </Border>
+        </DockPanel>
+        <StackPanel Style="{StaticResource ItemDescriptionContainer}">
+            <Border Style="{StaticResource ImageBorder}" Visibility="{Binding Armor.ImagePath, Converter={StaticResource objectToVisibilityConverter}}">
+                <Image Style="{StaticResource SmallMaxHeightImage}" Source="{Binding Armor.ImagePath.FullPath}" />
+            </Border>
+            <Border Style="{StaticResource ItemDescriptionBorder}">
+                <StackPanel>
+                    <ContentControl x:Name="Stats" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

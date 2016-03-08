@@ -1,0 +1,2 @@
+UPDATE ImagePath
+SET Path = SUBSTRING(Path, 0, LEN(Path) - 3) + '.png'

@@ -1,0 +1,18 @@
+ALTER TABLE ImagePath
+ALTER COLUMN ID IDENTITY(245, 1)
+GO
+INSERT INTO ImagePath (Path)
+VALUES ('\Images\Weapons\TheLastMinute.png')
+GO
+INSERT INTO ImagePath (Path)
+VALUES ('\Images\Weapons\RockvilleSlugger.png')
+GO
+INSERT INTO ImagePath (Path)
+VALUES ('\Images\Weapons\OverseersGuardian.png')
+GO
+INSERT INTO ImagePath (Path)
+VALUES ('\Images\Weapons\SprayNPray.png')
+GO
+INSERT INTO ImagePath (Path)
+VALUES ('\Images\Weapons\TinkerTomSpecial.png')
+GO
