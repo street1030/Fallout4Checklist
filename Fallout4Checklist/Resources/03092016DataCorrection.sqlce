@@ -1,0 +1,315 @@
+INSERT INTO WeaponArea (AreaID, WeaponID)
+VALUES (151, 110)
+GO
+UPDATE Magazine
+SET Walkthrough = 'In the scavenger''s sleeping area, close to the steamer trunk, western area near exit stairs.'
+WHERE ID = 71
+GO
+UPDATE Magazine
+SET AreaID = 75
+WHERE ID = 105
+GO
+UPDATE Magazine
+SET AreaID = 55
+WHERE ID = 106
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 178
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 179
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 180
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 181
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 182
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 183
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 184
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 185
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 186
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 187
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 188
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 189
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 190
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 191
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 192
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 193
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 194
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 195
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 196
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 197
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 198
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 199
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 200
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 201
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 202
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 203
+GO
+UPDATE Area
+SET MinThreatLevel = 6, MaxThreatLevel = 14
+WHERE ID = 204
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 205
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 206
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 207
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 208
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 209
+GO
+UPDATE Area
+SET MinThreatLevel = 25
+WHERE ID = 210
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 211
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 212
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 213
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 214
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 215
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 216
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 217
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 218
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 219
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 220
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 221
+GO
+UPDATE Area
+SET MinThreatLevel = 15, MaxThreatLevel = 25
+WHERE ID = 222
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 223
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 224
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 225
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 226
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 227
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 228
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 229
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 230
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 231
+GO
+UPDATE Area
+SET MinThreatLevel = 25
+WHERE ID = 232
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 233
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 234
+GO
+UPDATE Area
+SET MinThreatLevel = 20
+WHERE ID = 235
+GO
+UPDATE Area
+SET MinThreatLevel = 25
+WHERE ID = 236
+GO
+UPDATE Area
+SET MinThreatLevel = 25
+WHERE ID = 237
+GO
+UPDATE Area
+SET MinThreatLevel = 25
+WHERE ID = 238
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 239
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 240
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 241
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 242
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 243
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 244
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 245
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 246
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 247
+GO
+UPDATE Area
+SET MinThreatLevel = 35
+WHERE ID = 248
+GO
+UPDATE Area
+SET MinThreatLevel = 35
+WHERE ID = 249
+GO
+UPDATE Area
+SET MinThreatLevel = 35
+WHERE ID = 250
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 254
+GO
+UPDATE Area
+SET MinThreatLevel = 30
+WHERE ID = 262
+GO

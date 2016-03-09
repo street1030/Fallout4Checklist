@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
-using Fallout4Checklist.ViewModels;
 using Fallout4Checklist.Models.Menu;
-using System;
 
 namespace Fallout4Checklist.Repositories
 {
     public static class Repository
     {
+        public static List<Checklist> Checklists { get; set; }
         public static List<Area> Areas { get; set; }
         public static List<AreaPath> AreaPaths { get; set; }
         public static List<QuestType> QuestTypes { get; set; }
@@ -21,6 +20,7 @@ namespace Fallout4Checklist.Repositories
             MenuItems = new List<MenuGroup>();
             using (var context = new Fallout4ChecklistContext())
             {
+                SetChecklists(context);
                 SetAreas(context);
                 SetAreaPaths(context);
                 SetQuests(context);
@@ -31,6 +31,13 @@ namespace Fallout4Checklist.Repositories
                 SetPowerArmorMenuItems(context);
                 SetCompanionMenuItems(context);
             }
+        }
+
+        private static void SetChecklists(Fallout4ChecklistContext context)
+        {
+            Checklists = context.Set<Checklist>()
+                .Where(x => !x.IsDeleted)
+                .ToList();
         }
 
         private static void SetAreaPaths(Fallout4ChecklistContext context)

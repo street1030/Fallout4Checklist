@@ -8,6 +8,7 @@ namespace Fallout4Checklist.Entities
         public Companion()
         {
             QuestStagesRewardedFrom = new List<QuestStage>();
+            ChecklistCollectedStatus = new List<ChecklistCompanion>();
         }
 
         public string Name { get; set; }
@@ -27,5 +28,6 @@ namespace Fallout4Checklist.Entities
         public virtual ImagePath ImagePath { get; set; }
 
         public virtual ICollection<QuestStage> QuestStagesRewardedFrom { get; set; }
+        public virtual List<ChecklistCompanion> ChecklistCollectedStatus { get; set; }
     }
 }

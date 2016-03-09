@@ -12,6 +12,7 @@ namespace Fallout4Checklist.Entities
             NextQuests = new List<Quest>();
             GivenByNPC = new List<Character>();
             Locations = new List<Area>();
+            ChecklistCollectedStatus = new List<ChecklistQuest>();
         }
 
         public int ID { get; set; }
@@ -31,5 +32,6 @@ namespace Fallout4Checklist.Entities
         public virtual ICollection<Quest> NextQuests { get; set; }
         public virtual ICollection<Character> GivenByNPC { get; set; }
         public virtual ICollection<Area> Locations { get; set; }
+        public virtual List<ChecklistQuest> ChecklistCollectedStatus { get; set; }
     }
 }

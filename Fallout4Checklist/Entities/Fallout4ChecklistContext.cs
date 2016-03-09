@@ -1,7 +1,5 @@
-using Fallout4Checklist.Entities;
 using Fallout4Checklist.Entities.Mapping;
 using Fallout4Checklist.Migrations;
-using System.Collections.Generic;
 using System.Data.Entity;
 
 namespace Fallout4Checklist.Entities
@@ -53,6 +51,13 @@ namespace Fallout4Checklist.Entities
             modelBuilder.Configurations.Add(new WeaponMap());
             modelBuilder.Configurations.Add(new WeaponSubTypeMap());
             modelBuilder.Configurations.Add(new WeaponTypeMap());
+            modelBuilder.Configurations.Add(new ChecklistMap());
+            modelBuilder.Configurations.Add(new ChecklistArmorMap());
+            modelBuilder.Configurations.Add(new ChecklistBobbleheadMap());
+            modelBuilder.Configurations.Add(new ChecklistCompanionMap());
+            modelBuilder.Configurations.Add(new ChecklistMagazineMap());
+            modelBuilder.Configurations.Add(new ChecklistQuestMap());
+            modelBuilder.Configurations.Add(new ChecklistWeaponMap());
         }
     }
 }

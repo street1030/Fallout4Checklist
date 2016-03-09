@@ -10,6 +10,7 @@ namespace Fallout4Checklist.Entities
             QuestStages = new List<QuestStage>();
             Merchants = new List<Character>();
             WornByCharacters = new List<Character>();
+            ChecklistCollectedStatus = new List<ChecklistWeapon>();
         }
 
         public int ID { get; set; }
@@ -45,5 +46,6 @@ namespace Fallout4Checklist.Entities
         public virtual ICollection<QuestStage> QuestStages { get; set; }
         public virtual List<Character> Merchants { get; set; }
         public virtual List<Character> WornByCharacters { get; set; }
+        public virtual List<ChecklistWeapon> ChecklistCollectedStatus { get; set; }
     }
 }

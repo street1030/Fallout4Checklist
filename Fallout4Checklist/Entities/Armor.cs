@@ -16,6 +16,7 @@ namespace Fallout4Checklist.Entities
             Slots = new List<ArmorSlot>();
             Effects = new List<ArmorEffect>();
             QuestStages = new List<QuestStage>();
+            ChecklistCollectedStatus = new List<ChecklistArmor>();
         }
 
         public int ID { get; set; }
@@ -42,5 +43,6 @@ namespace Fallout4Checklist.Entities
         public virtual List<Character> Merchants { get; set; }
         public virtual List<Character> WornByCharacters { get; set; }
         public virtual List<Area> Areas { get; set; }
+        public virtual List<ChecklistArmor> ChecklistCollectedStatus { get; set; }
     }
 }

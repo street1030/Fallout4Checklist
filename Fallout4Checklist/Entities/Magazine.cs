@@ -1,9 +1,15 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fallout4Checklist.Entities
 {
     public partial class Magazine
     {
+        public Magazine()
+        {
+            ChecklistCollectedStatus = new List<ChecklistMagazine>();
+        }
+
         public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -23,5 +29,7 @@ namespace Fallout4Checklist.Entities
         public virtual ImagePath ImagePath { get; set; }
 
         public virtual MagazineType MagazineType { get; set; }
+
+        public virtual List<ChecklistMagazine> ChecklistCollectedStatus { get; set; }
     }
 }

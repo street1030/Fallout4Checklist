@@ -133,6 +133,16 @@ namespace Fallout4Checklist.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] _03092016DataCorrection {
+            get {
+                object obj = ResourceManager.GetObject("_03092016DataCorrection", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] RemoveIndoorImagePaths {
             get {
                 object obj = ResourceManager.GetObject("RemoveIndoorImagePaths", resourceCulture);

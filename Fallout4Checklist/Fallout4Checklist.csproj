@@ -212,9 +212,23 @@
     <Compile Include="Entities\ArmorEffect.cs" />
     <Compile Include="Entities\ArmorSlot.cs" />
     <Compile Include="Entities\Base\MappingBase.cs" />
+    <Compile Include="Entities\Checklist.cs" />
+    <Compile Include="Entities\ChecklistArmor.cs" />
+    <Compile Include="Entities\ChecklistBobblehead.cs" />
+    <Compile Include="Entities\ChecklistCompanion.cs" />
+    <Compile Include="Entities\ChecklistMagazine.cs" />
+    <Compile Include="Entities\ChecklistQuest.cs" />
+    <Compile Include="Entities\ChecklistWeapon.cs" />
     <Compile Include="Entities\Mapping\ArmorEffectMap.cs" />
     <Compile Include="Entities\Mapping\ArmorMap.cs" />
     <Compile Include="Entities\Mapping\ArmorSlotMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistArmorMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistBobbleheadMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistCompanionMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistMagazineMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistQuestMap.cs" />
+    <Compile Include="Entities\Mapping\ChecklistWeaponMap.cs" />
     <Compile Include="Entities\Mapping\QuestStageRewardMap.cs" />
     <Compile Include="Entities\Mapping\QuestStageRewardTypeMap.cs" />
     <Compile Include="Entities\Partial\Area.cs" />
@@ -379,6 +393,14 @@
     <Compile Include="Migrations\201603021931576_RemoveBobbleheadValue.Designer.cs">
       <DependentUpon>201603021931576_RemoveBobbleheadValue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603091842187_DataCorrection.cs" />
+    <Compile Include="Migrations\201603091842187_DataCorrection.Designer.cs">
+      <DependentUpon>201603091842187_DataCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603092035333_ChecklistAndRelatedTables.cs" />
+    <Compile Include="Migrations\201603092035333_ChecklistAndRelatedTables.Designer.cs">
+      <DependentUpon>201603092035333_ChecklistAndRelatedTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Ammo.cs" />
     <Compile Include="Entities\Area.cs" />
@@ -428,6 +450,7 @@
     <Compile Include="Models\QuestGroup.cs" />
     <Compile Include="Models\QuestStageContainer.cs" />
     <Compile Include="Repositories\AreaRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepository.cs" />
     <Compile Include="Repositories\MenuRepository.cs" />
     <Compile Include="Repositories\QuestRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
@@ -636,6 +659,12 @@
     <EmbeddedResource Include="Migrations\201603021931576_RemoveBobbleheadValue.resx">
       <DependentUpon>201603021931576_RemoveBobbleheadValue.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603091842187_DataCorrection.resx">
+      <DependentUpon>201603091842187_DataCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603092035333_ChecklistAndRelatedTables.resx">
+      <DependentUpon>201603092035333_ChecklistAndRelatedTables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -757,6 +786,7 @@
     <None Include="Resources\03042016UpdatePaths.sqlce" />
     <None Include="Resources\03042016WeaponImagePaths.sqlce" />
     <None Include="Resources\03072016MagazineWalkthroughs" />
+    <None Include="Resources\03092016DataCorrection.sqlce" />
     <None Include="Resources\RemoveIndoorImagePaths.sqlce" />
     <None Include="Resources\UpdateImagePaths.sqlce" />
     <SplashScreen Include="Images\SplashScreen.png">

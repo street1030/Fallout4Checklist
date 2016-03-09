@@ -145,4 +145,7 @@
   <data name="_03072016MagazineWalkthroughs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\03072016MagazineWalkthroughs;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="_03092016DataCorrection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03092016DataCorrection.sqlce;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

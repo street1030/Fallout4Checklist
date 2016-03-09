@@ -1,9 +1,15 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fallout4Checklist.Entities
 {
     public partial class Bobblehead
     {
+        public Bobblehead()
+        {
+            ChecklistCollectedStatus = new List<ChecklistBobblehead>();
+        }
+
         public string ID { get; set; }
         public string Description { get; set; }
 
@@ -22,5 +28,7 @@ namespace Fallout4Checklist.Entities
 
         public int ImagePathID { get; set; }
         public virtual ImagePath ImagePath { get; set; }
+
+        public virtual List<ChecklistBobblehead> ChecklistCollectedStatus { get; set; }
     }
 }

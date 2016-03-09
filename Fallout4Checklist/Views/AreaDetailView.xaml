@@ -21,7 +21,9 @@
                     <Border>
                         <StackPanel Margin="10">
                             <Label Style="{StaticResource AreaHeader}" Content="{Binding Name}" />
-                            <Label Style="{StaticResource AreaSubHeader}" Content="{Binding RecommendedLevel}" />
+                            <Label Style="{StaticResource AreaSubHeader}"
+                                   Visibility="{Binding HasRecommendedLevel, Converter={StaticResource boolToVisibilityConverter}}"
+                                   Content="{Binding RecommendedLevel}" />
                         </StackPanel>
                     </Border>
                 </StackPanel>
