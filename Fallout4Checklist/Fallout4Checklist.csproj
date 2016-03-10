@@ -460,6 +460,7 @@
     <Compile Include="ViewModels\Base\CollapsableSection.cs" />
     <Compile Include="ViewModels\Base\CollectableItemViewModel.cs" />
     <Compile Include="ViewModels\Base\FilterableSection.cs" />
+    <Compile Include="ViewModels\ChecklistPickerViewModel.cs" />
     <Compile Include="ViewModels\NavigationViewModel.cs" />
     <Compile Include="ViewModels\AreaDetail\BobbleheadDetailViewModel.cs" />
     <Compile Include="ViewModels\AreaDetail\CompanionDetailViewModel.cs" />
@@ -485,6 +486,9 @@
     </Compile>
     <Compile Include="Views\Armor\ArmorSlotView.xaml.cs">
       <DependentUpon>ArmorSlotView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChecklistPickerView.xaml.cs">
+      <DependentUpon>ChecklistPickerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LocationBorderOverlayView.xaml.cs">
       <DependentUpon>LocationBorderOverlayView.xaml</DependentUpon>
@@ -17853,6 +17857,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Armor\ArmorSlotView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChecklistPickerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

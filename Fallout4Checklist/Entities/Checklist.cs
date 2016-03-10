@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Caliburn.Micro;
+using System;
 using System.Collections.Generic;
 
 namespace Fallout4Checklist.Entities
 {
-    public partial class Checklist
+    public partial class Checklist : PropertyChangedBase
     {
         public Checklist()
         {
@@ -16,7 +17,17 @@ namespace Fallout4Checklist.Entities
         }
 
         public int ID { get; set; }
-        public string Name { get; set; }
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+                NotifyOfPropertyChange(() => Name);
+            }
+        }
+
         public bool IsDeleted { get; set; }
         public DateTime DateDeleted { get; set; }
         public DateTime DateCreated { get; set; }

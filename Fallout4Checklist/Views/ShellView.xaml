@@ -20,7 +20,6 @@
             <ColumnDefinition Style="{StaticResource MenuColumn}" />
             <ColumnDefinition Width="60" />
             <ColumnDefinition Width="5*" />
-            <!--<ColumnDefinition />-->
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -29,7 +28,12 @@
         </Grid.RowDefinitions>
 
         <ContentControl x:Name="Navigation" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
-        <ContentControl Margin="0, 4, 0, 0" x:Name="ActiveItem" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" />
+
+        <ContentControl Margin="0, 4, 0, 0" 
+                        x:Name="ActiveItem" 
+                        Grid.Row="1" 
+                        Grid.Column="0" 
+                        Grid.RowSpan="2" />
 
         <ContentControl x:Name="Map"
                         Grid.Column="1"
@@ -37,25 +41,13 @@
                         Grid.RowSpan="2"
                         Grid.ColumnSpan="2"/>
         
-        <!--<StackPanel Grid.Column="3" Grid.Row="1" Grid.RowSpan="2">
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="MedKit" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Novice Lock" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Caps" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Ammo" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Novice Ammo" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Door" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Cola" />
-            <RadioButton cal:Message.Attach="[Event Checked] = [Action CheckChanged($source)]" GroupName="markers" Content="Novice Terminal" />
-
-            <ItemsControl ItemsSource="{Binding Points}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Text}" />
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </StackPanel>-->
-        
         <Button Name="ChangeMenuVisibility" Style="{StaticResource CollapseButton}" />
+
+        <ContentControl x:Name="ChecklistPicker" 
+                        Visibility="{Binding IsChecklistPickerVisible, Converter={StaticResource boolToVisibilityConverter}}"
+                        Grid.Row="1" 
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3" />
     </Grid>
 </metro:MetroWindow>

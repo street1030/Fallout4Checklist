@@ -297,7 +297,7 @@
         <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
     <!-- TEXT 14 END -->
-
+    
     <Style x:Key="ItemTooltipButton" TargetType="Button">
         <Setter Property="Width" Value="35" />
         <Setter Property="IsEnabled" Value="False" />

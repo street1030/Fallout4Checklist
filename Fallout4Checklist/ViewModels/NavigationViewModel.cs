@@ -18,7 +18,6 @@ namespace Fallout4Checklist.ViewModels
         }
 
         public NavigationItemCollection NavigationItems { get; set; }
-
         public void Handle(LocationBorderClick message) => ActivateAreaDetails(message.AreaID);
         public void Handle(MenuItemClicked message) => ActivateAreaDetails(message.AreaID);
 
@@ -58,10 +57,12 @@ namespace Fallout4Checklist.ViewModels
         {
             var items = new NavigationItemCollection();
 
+            var checklistPicker = new NavigationItem("Checklist Picker", typeof(ChecklistPickerViewModel));
             var checklist = new NavigationItem("Checklist", typeof(MenuViewModel));
             var questTracker = new NavigationItem("Quest Tracker", typeof(QuestViewModel));
             var questDetails = new NavigationItem("Quest Details", typeof(QuestDetailsViewModel), false);
             var areaDetails = new NavigationItem("Area Details", typeof(AreaDetailViewModel), false);
+            items.Add(checklistPicker);
             items.Add(checklist);
             items.Add(questTracker);
             items.Add(questDetails);
