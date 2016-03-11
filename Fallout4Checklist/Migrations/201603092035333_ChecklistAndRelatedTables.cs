@@ -28,7 +28,7 @@ namespace Fallout4Checklist.Migrations
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 100),
                         IsDeleted = c.Boolean(nullable: false),
-                        DateDeleted = c.DateTime(),
+                        DateDeleted = c.DateTime(nullable: true),
                         DateCreated = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);

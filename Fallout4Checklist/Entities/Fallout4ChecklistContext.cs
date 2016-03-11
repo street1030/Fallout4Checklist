@@ -25,6 +25,7 @@ namespace Fallout4Checklist.Entities
         public DbSet<Quest> Quests { get; set; }
         public DbSet<QuestType> QuestTypes { get; set; }
         public DbSet<Weapon> Weapons { get; set; }
+        public DbSet<Checklist> Checklists { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

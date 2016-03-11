@@ -29,7 +29,7 @@ namespace Fallout4Checklist.Entities
         }
 
         public bool IsDeleted { get; set; }
-        public DateTime DateDeleted { get; set; }
+        public DateTime? DateDeleted { get; set; }
         public DateTime DateCreated { get; set; }
 
         public virtual List<ChecklistMagazine> MagazineCollectedStatus { get; set; }

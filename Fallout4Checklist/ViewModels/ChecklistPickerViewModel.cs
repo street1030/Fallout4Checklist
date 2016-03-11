@@ -69,12 +69,8 @@ namespace Fallout4Checklist.ViewModels
 
         public void Add()
         {
-            var checklist = new Checklist();
-            checklist.Name = ChecklistName;
-            checklist.DateCreated = DateTime.Now;
+            var checklist = ChecklistRepository.Add(ChecklistName);
             Checklists.Add(checklist);
-            // Added all collectables to checklist
-            // Save checklist to database along with collectables
             // After creation, hide checklist selection screen and show actual checklist and map.
         }
 
