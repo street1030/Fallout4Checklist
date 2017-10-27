@@ -13,9 +13,6 @@ namespace Fallout4Checklist.Entities
             QuestStages = new List<QuestStage>();
             Merchants = new List<Character>();
             WornByCharacters = new List<Character>();
-            Slots = new List<ArmorSlot>();
-            Effects = new List<ArmorEffect>();
-            QuestStages = new List<QuestStage>();
             ChecklistCollectedStatus = new List<ChecklistArmor>();
         }
 
